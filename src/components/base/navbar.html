@@ -1,0 +1,116 @@
+<div id="loadingDiv"><div class="loader">Loading...</div></div>
+
+<nav class="navbar fixed-top navbar-light">
+  <div class="container content">
+    <div>
+      @@if (!!context.without_login) {
+      <a href="/home-without-login.html">
+        <img class="content__logo" src="assets/icons/logo.png" alt="" />
+      </a>
+      } @@if (!context.without_login) {
+      <a href="/">
+        <img class="content__logo" src="assets/icons/logo.png" alt="" />
+      </a>
+      }
+    </div>
+    <div class="d-flex justify-content-end align-items-center">
+      <button type="button" class="btn btn-language">中</button>
+      @@if (!context.without_login) {
+      <div
+        class="btn-group"
+        role="group"
+        aria-label="Basic mixed styles example"
+      >
+        <a href="/deposit.html" class="btn btn-secondary btn-currency">
+          <img
+            class="content__logo"
+            src="assets/icons/navbar-wallet.svg"
+            alt=""
+          />
+          <span>SGD 5,000,000</span>
+        </a>
+        <a href="/deposit.html" class="btn btn-warning btn-add">
+          <img
+            class="content__logo"
+            src="assets/icons/navbar-plus.svg"
+            alt=""
+          />
+        </a>
+      </div>
+      } @@if (!!context.without_login) {
+      <a href="/login.html" class="btn btn-warning btn-login">
+        <div>
+          <img src="assets/icons/user-black.svg" alt="" />
+          <span data-i18n="Login_Register"></span>
+        </div>
+      </a>
+      }
+      <li class="nav-item dropdown list-unstyled avatar-dropdown">
+        <a
+          class="nav-link pe-0"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img class="content__logo" src="assets/icons/avatar.svg" alt="" />
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          <li>
+            <a class="dropdown-item divider" href="#">
+              <div class="d-flex">
+                <img class="close-nav" src="assets/icons/avatar.svg" alt="" />
+                <div class="ps-2">
+                  <div class="fs-6" data-i18n="menu.Welcome"></div>
+                  <span class="text-primary fs-12px" data-i18n="menu.View_my_account"></span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <img src="assets/icons/infomation.svg" alt="" />
+              <span data-i18n="menu.Information"></span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item country-name" data-bs-toggle="collapse" href="#collapseCountry" role="button" aria-expanded="false" aria-controls="collapseCountry">
+              <img src="assets/icons/country.svg" alt="" />
+              <div class="d-flex justify-content-between w-inherit">
+                <div>
+                  <div data-i18n="menu.Country"></div>
+                  <div class="fs-12px text-muted current-country" data-i18n="menu.Uwin33_Singapore"></div>
+                </div>
+                <img class="pull-right" src="assets/icons/down-white.svg" alt="" />
+              </div>
+            </a>
+            <div class="collapse" id="collapseCountry">
+              <a href="#" class="dropdown-item collapse__item ps-5" data-region="Singapore" role="button">
+                <img src="assets/images/Uwin33_Singapore.svg" alt="" />
+                <span data-i18n="menu.Uwin33_Singapore"></span>
+              </a>
+              <a href="#" class="dropdown-item collapse__item ps-5" data-region="Malaysia" role="button">
+                <img src="assets/images/Uwin33_Malaysia.svg" alt="" />
+                <span data-i18n="menu.Uwin33_Malaysia"></span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a class="dropdown-item" href="./login.html">
+              <div class="btn btn-warning w-100 d-flex align-items-center justify-content-center" data-i18n="menu.Logout"></div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </div>
+  </div>
+
+  <div class="text-animated">
+    <span class="text-overflow" data-i18n="notification_run"></span>
+  </div>
+</nav>
+
+<!-- MODAL -->
+@@include('../please-login-modal.html')
+<!-- MODAL -->
