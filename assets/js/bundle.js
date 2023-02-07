@@ -712,7 +712,7 @@ $(document).ready(function () {
     speed: 500,
     lazyLoad: 'ondemand',
     fade: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     // cssEase: "linear",
   });

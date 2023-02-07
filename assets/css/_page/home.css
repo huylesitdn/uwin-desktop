@@ -419,17 +419,17 @@
     right: 0;
     bottom: -15px; }
   .home__content .top-slider .slick-dots li {
-    margin: 0 2px;
-    width: 6px; }
+    margin: 0 3px;
+    width: 12px; }
   .home__content .top-slider .slick-dots li button {
-    width: 6px; }
+    width: 12px; }
   .home__content .top-slider .slick-dots li button::before {
     background-color: #707070;
     content: '';
-    width: 7px;
-    height: 7px;
+    width: 12px;
+    height: 6px;
     opacity: 1;
-    border-radius: 50%; }
+    border-radius: 5px; }
   .home__content .top-slider .slick-dots li.slick-active,
   .home__content .top-slider .slick-dots li.slick-active button {
     width: 27px; }

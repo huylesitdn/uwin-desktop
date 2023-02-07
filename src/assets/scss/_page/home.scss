@@ -587,23 +587,23 @@
       }
 
       .slick-dots li {
-        margin: 0 2px;
+        margin: 0 3px;
         // transition: 0.2s;
-        width: 6px;
+        width: 12px;
       }
 
       .slick-dots li button {
         // transition: 0.2s;
-        width: 6px;
+        width: 12px;
       }
 
       .slick-dots li button::before {
         background-color: #707070;
         content: '';
-        width: 7px;
-        height: 7px;
+        width: 12px;
+        height: 6px;
         opacity: 1;
-        border-radius: 50%;
+        border-radius: 5px;
       }
 
       .slick-dots li.slick-active,
