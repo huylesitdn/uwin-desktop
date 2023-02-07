@@ -1,10 +1,15 @@
-<div class="layout d-flex">
-  <div class="left">
-    @@include('./left-menu.html')
+<div class="layout row">
+  <div class="left col-2">
+    @@include('./left-menu.html', {
+      active: '@@menuActive'
+    })
   </div>
-  <div class="content">
-    content
-    <!-- @@include('@@childContent') -->
+  <div class="content col-7">
+    @@include('@@childContent')
   </div>
-  <div class="right">right</div>
+  <div class="right col-3">
+    @@if (!context.hideRightMenu) {
+      @@include('./right-menu.html')
+    }
+  </div>
 </div>

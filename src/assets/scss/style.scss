@@ -81,7 +81,15 @@
 
             &.divider {
               border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
+            }
+          }
+        }
+        #collapseCountry{
+          .dropdown-item {
+            color: rgba(255, 255, 255, 0.45);
+            &.active {
+              color: #fff;
+              background-color: transparent;
             }
           }
         }

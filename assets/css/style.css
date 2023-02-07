@@ -60,6 +60,11 @@
             background-color: #19264B !important; }
           .navbar.fixed-top .content .avatar-dropdown .dropdown-menu .dropdown-item.divider {
             border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      .navbar.fixed-top .content .avatar-dropdown #collapseCountry .dropdown-item {
+        color: rgba(255, 255, 255, 0.45); }
+        .navbar.fixed-top .content .avatar-dropdown #collapseCountry .dropdown-item.active {
+          color: #fff;
+          background-color: transparent; }
       .navbar.fixed-top .content .btn {
         min-width: auto;
         height: 40px;

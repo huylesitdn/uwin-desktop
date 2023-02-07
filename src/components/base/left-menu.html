@@ -2,7 +2,7 @@
   <div class="list-group divider">
     <a
       href="./"
-      class="list-group-item list-group-item-action active"
+      class="list-group-item list-group-item-action @@if (context.active === '0') {active}"
       aria-current="true"
     >
       <div class="img">
@@ -11,7 +11,7 @@
       </div>
       <div class="text" data-i18n="footer.HOME"></div>
     </a>
-    <a href="./deposit.html" class="list-group-item list-group-item-action">
+    <a href="./deposit.html" class="list-group-item list-group-item-action @@if (context.active === '1') {active}">
       <div class="img">
         <img src="assets/icons/footer-wallet.png" alt="" />
         <img
@@ -22,7 +22,7 @@
       </div>
       <div class="text" data-i18n="footer.WALLET"></div>
     </a>
-    <a href="./promotion.html" class="list-group-item list-group-item-action">
+    <a href="./promotion.html" class="list-group-item list-group-item-action @@if (context.active === '2') {active}">
       <div class="img">
         <img src="assets/icons/footer-promotion.png" alt="" />
         <img
@@ -33,7 +33,7 @@
       </div>
       <div class="text" data-i18n="footer.PROMOTION"></div>
     </a>
-    <a href="./live-chat.html" class="list-group-item list-group-item-action">
+    <a href="./live-chat.html" class="list-group-item list-group-item-action @@if (context.active === '3') {active}">
       <div class="img">
         <img src="assets/icons/footer-livechat.png" alt="" />
         <img
@@ -45,30 +45,30 @@
       <div class="text" data-i18n="footer.LIVE_CHAT"></div>
     </a>
   </div>
-  <!-- <div class="list-group">
+  <div class="list-group pt-3">
     <a href="./slot.html" class="list-group-item list-group-item-action">
-      <img src="assets/images/menu/slot1.png" alt="" />
+      <img class="icon" src="assets/images/category/slot.svg" alt="" />
       <span data-i18n="menu.Slot"></span>
     </a>
     <a href="./casino.html" class="list-group-item list-group-item-action">
-      <img src="assets/images/menu/casino.png" alt="" />
+      <img class="icon" src="assets/images/category/casino.svg" alt="" />
       <span data-i18n="menu.Casino"></span>
     </a>
     <a href="./sport.html" class="list-group-item list-group-item-action">
-      <img src="assets/images/menu/sport.png" alt="" />
-      <span data-i18n="menu.Sport_E_sport"></span>
+      <img class="icon" src="assets/images/category/sport.svg" alt="" />
+      <span data-i18n="Sport_E_sport"></span>
     </a>
     <a href="./arcade.html" class="list-group-item list-group-item-action">
-      <img src="assets/images/menu/arcade.png" alt="" />
+      <img class="icon" src="assets/images/category/arcade.svg" alt="" />
       <span data-i18n="menu.Arcade"></span>
     </a>
     <a href="./4d.html" class="list-group-item list-group-item-action">
-      <img src="assets/images/menu/4d.png" alt="" />
+      <img class="icon" src="assets/images/category/4d.svg" alt="" />
       <span data-i18n="menu.4D"></span>
     </a>
     <a href="./voucher.html" class="list-group-item list-group-item-action">
-      <img src="assets/images/menu/voucher.png" alt="" />
-      <span data-i18n="menu.Redeem_Voucher"></span>
+      <img class="icon" src="assets/images/category/voucher.svg" alt="" />
+      <span data-i18n="voucher_page.Redeem_Voucher"></span>
     </a>
-  </div> -->
+  </div>
 </div>

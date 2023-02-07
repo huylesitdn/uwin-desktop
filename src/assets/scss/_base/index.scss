@@ -47,6 +47,10 @@ img {
 a {
   color: #597EF7;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .toast {
@@ -70,24 +74,6 @@ a {
       background-color: rgba(0, 0, 0, .85);
       border-radius: 4px;
     }
-  }
-}
-
-.layout {
-  gap: 25px;
-
-  &>.left {
-    width: 215px;
-  }
-
-  &>.content {
-    width: 800px;
-    min-height: 400px;
-  }
-
-  &>.right {
-    width: auto;
-    flex: 1;
   }
 }
 
@@ -491,6 +477,7 @@ a {
 
 .show-action {
   overflow: hidden;
+  background-color: transparent;
 
   .btn-demo {
     text-indent: -9999em;
@@ -513,6 +500,23 @@ a {
     color: #fff !important;
     height: 25px !important;
     max-width: 55px !important;
+  }
+
+  .action {
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    .action {
+      opacity: 1;
+      z-index: 1;
+
+      .btn-demo {
+        animation: pulseDemoBtn 1.5s infinite;
+        -webkit-animation: pulseDemoBtn 1.5s infinite;
+        box-shadow: 0 0 0 0 rgba(#FDBB2C, .5);
+      }
+    }
   }
 
   &.active {

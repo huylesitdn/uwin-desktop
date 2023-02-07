@@ -1,6 +1,6 @@
 <div id="loadingDiv"><div class="loader">Loading...</div></div>
 
-<nav class="navbar fixed-top navbar-light">
+<nav id="myNavbar" class="navbar fixed-top navbar-light">
   <div class="container content">
     <div>
       @@if (!!context.without_login) {
@@ -58,11 +58,11 @@
         </a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
           <li>
-            <a class="dropdown-item divider" href="#">
+            <a class="dropdown-item divider" href="./my-account.html">
               <div class="d-flex">
                 <img class="close-nav" src="assets/icons/avatar.svg" alt="" />
                 <div class="ps-2">
-                  <div class="fs-6" data-i18n="menu.Welcome"></div>
+                  <div class="fs-16px" data-i18n="menu.Welcome"></div>
                   <span class="text-primary fs-12px" data-i18n="menu.View_my_account"></span>
                 </div>
               </div>
@@ -106,8 +106,14 @@
     </div>
   </div>
 
-  <div class="text-animated">
-    <span class="text-overflow" data-i18n="notification_run"></span>
+  <div class="container">
+    <div class="text-animated">
+      <marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
+        <span class="text-overflow" data-i18n="notification_run"></span>
+        <span class="text-overflow" data-i18n="notification_run"></span>
+        <span class="text-overflow" data-i18n="notification_run"></span>
+      </marquee>
+    </div>
   </div>
 </nav>
 
