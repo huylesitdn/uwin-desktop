@@ -4,11 +4,11 @@
   <div class="container content">
     <div>
       @@if (!!context.without_login) {
-      <a href="/home-without-login.html">
+      <a href="./index-without-login.html">
         <img class="content__logo" src="assets/icons/logo.png" alt="" />
       </a>
       } @@if (!context.without_login) {
-      <a href="/">
+      <a href="./">
         <img class="content__logo" src="assets/icons/logo.png" alt="" />
       </a>
       }
@@ -21,7 +21,7 @@
         role="group"
         aria-label="Basic mixed styles example"
       >
-        <a href="/deposit.html" class="btn btn-secondary btn-currency">
+        <a href="./deposit.html" class="btn btn-secondary btn-currency">
           <img
             class="content__logo"
             src="assets/icons/navbar-wallet.svg"
@@ -29,7 +29,7 @@
           />
           <span>SGD 5,000,000</span>
         </a>
-        <a href="/deposit.html" class="btn btn-warning btn-add">
+        <a href="./deposit.html" class="btn btn-warning btn-add">
           <img
             class="content__logo"
             src="assets/icons/navbar-plus.svg"
@@ -38,13 +38,14 @@
         </a>
       </div>
       } @@if (!!context.without_login) {
-      <a href="/login.html" class="btn btn-warning btn-login">
+      <a href="./login.html" class="btn btn-warning btn-login">
         <div>
           <img src="assets/icons/user-black.svg" alt="" />
           <span data-i18n="Login_Register"></span>
         </div>
       </a>
       }
+      @@if (!context.without_login) {
       <li class="nav-item dropdown list-unstyled avatar-dropdown">
         <a
           class="nav-link pe-0"
@@ -103,6 +104,7 @@
           </li>
         </ul>
       </li>
+      }
     </div>
   </div>
 

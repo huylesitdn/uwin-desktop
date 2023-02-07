@@ -1,7 +1,7 @@
 <div class="left-menu">
   <div class="list-group divider">
     <a
-      href="./"
+      href="./index@@if (context.without_login === 'true') {-without-login}.html"
       class="list-group-item list-group-item-action @@if (context.active === '0') {active}"
       aria-current="true"
     >
@@ -11,7 +11,7 @@
       </div>
       <div class="text" data-i18n="footer.HOME"></div>
     </a>
-    <a href="./deposit.html" class="list-group-item list-group-item-action @@if (context.active === '1') {active}">
+    <a href="./@@if (context.without_login === 'true') {login}@@if (context.without_login == 'false') {deposit}.html" class="list-group-item list-group-item-action @@if (context.active === '1') {active}">
       <div class="img">
         <img src="assets/icons/footer-wallet.png" alt="" />
         <img
@@ -22,7 +22,7 @@
       </div>
       <div class="text" data-i18n="footer.WALLET"></div>
     </a>
-    <a href="./promotion.html" class="list-group-item list-group-item-action @@if (context.active === '2') {active}">
+    <a href="./promotion@@if (context.without_login === 'true') {-without-login}.html" class="list-group-item list-group-item-action @@if (context.active === '2') {active}">
       <div class="img">
         <img src="assets/icons/footer-promotion.png" alt="" />
         <img
@@ -33,7 +33,7 @@
       </div>
       <div class="text" data-i18n="footer.PROMOTION"></div>
     </a>
-    <a href="./live-chat.html" class="list-group-item list-group-item-action @@if (context.active === '3') {active}">
+    <a href="./@@if (context.without_login === 'true') {login}@@if (context.without_login == 'false') {live-chat}.html" class="list-group-item list-group-item-action @@if (context.active === '3') {active}">
       <div class="img">
         <img src="assets/icons/footer-livechat.png" alt="" />
         <img
@@ -46,27 +46,27 @@
     </a>
   </div>
   <div class="list-group pt-3">
-    <a href="./slot.html" class="list-group-item list-group-item-action">
+    <a href="./slot@@if (context.without_login === 'true') {-without-login}.html" class="list-group-item list-group-item-action">
       <img class="icon" src="assets/images/category/slot.svg" alt="" />
       <span data-i18n="menu.Slot"></span>
     </a>
-    <a href="./casino.html" class="list-group-item list-group-item-action">
+    <a href="./casino@@if (context.without_login === 'true') {-without-login}.html" class="list-group-item list-group-item-action">
       <img class="icon" src="assets/images/category/casino.svg" alt="" />
       <span data-i18n="menu.Casino"></span>
     </a>
-    <a href="./sport.html" class="list-group-item list-group-item-action">
+    <a href="./sport@@if (context.without_login === 'true') {-without-login}.html" class="list-group-item list-group-item-action">
       <img class="icon" src="assets/images/category/sport.svg" alt="" />
       <span data-i18n="Sport_E_sport"></span>
     </a>
-    <a href="./arcade.html" class="list-group-item list-group-item-action">
+    <a href="./arcade@@if (context.without_login === 'true') {-without-login}.html" class="list-group-item list-group-item-action">
       <img class="icon" src="assets/images/category/arcade.svg" alt="" />
       <span data-i18n="menu.Arcade"></span>
     </a>
-    <a href="./4d.html" class="list-group-item list-group-item-action">
+    <a href="./4d@@if (context.without_login === 'true') {-without-login}.html" class="list-group-item list-group-item-action">
       <img class="icon" src="assets/images/category/4d.svg" alt="" />
       <span data-i18n="menu.4D"></span>
     </a>
-    <a href="./voucher.html" class="list-group-item list-group-item-action">
+    <a href="./voucher@@if (context.without_login === 'true') {-without-login}.html" class="list-group-item list-group-item-action">
       <img class="icon" src="assets/images/category/voucher.svg" alt="" />
       <span data-i18n="voucher_page.Redeem_Voucher"></span>
     </a>

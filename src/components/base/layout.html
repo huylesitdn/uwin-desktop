@@ -1,11 +1,14 @@
 <div class="layout row">
   <div class="left col-2">
     @@include('./left-menu.html', {
-      active: '@@menuActive'
+      active: '@@menuActive',
+      without_login: '@@if (!context.without_login) {false}@@if (!!context.without_login) {true}'
     })
   </div>
   <div class="content col-7">
-    @@include('@@childContent')
+    @@include('@@childContent', {
+      without_login: '@@if (!context.without_login) {false}@@if (!!context.without_login) {true}'
+    })
   </div>
   <div class="right col-3">
     @@if (!context.hideRightMenu) {
