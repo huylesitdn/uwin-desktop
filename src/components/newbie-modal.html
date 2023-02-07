@@ -13,11 +13,22 @@
       </div>
       <div class="modal-body text-center">
         <img src="assets/images/newbie.png" alt="" />
-        <div class="title" data-i18n="home_page.Congratulation"></div>
-        <div class="subtitle" data-i18n="home_page.Congratulation_des"></div>
+        @@if (context.without_login === 'true') {
+          <div class="title" data-i18n="home_page.Congratulation_without_login"></div>
+          <div class="subtitle" data-i18n="home_page.Congratulation_des_without_login"></div>
+        }
+        @@if (context.without_login === 'false') {
+          <div class="title" data-i18n="home_page.Congratulation"></div>
+          <div class="subtitle" data-i18n="home_page.Congratulation_des"></div>
+        }
       </div>
       <div class="modal-footer">
-        <a href="/deposit.html" class="btn btn-warning" data-i18n="home_page.Deposit_Claim"></a>
+        @@if (context.without_login === 'true') {
+          <a href="./register.html" class="btn btn-warning" data-i18n="home_page.Register_Claim"></a>
+        }
+        @@if (context.without_login === 'false') {
+          <a href="./deposit.html" class="btn btn-warning" data-i18n="home_page.Deposit_Claim"></a>
+        }
       </div>
     </div>
   </div>
