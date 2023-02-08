@@ -665,6 +665,9 @@ a {
         .left-menu .list-group .list-group-item:hover .img img.active {
           display: none; }
 
+.cursor-pointer {
+  cursor: pointer; }
+
 .text-muted {
   color: #ffffff73 !important; }
 
