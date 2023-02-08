@@ -228,15 +228,15 @@
         &__content {
           display: flex;
           place-content: flex-start;
-          gap: 10px;
+          gap: 15px;
           overflow-y: auto;
           padding-bottom: 10px;
 
           &__item {
             background: #131D39;
-            border-radius: 8px;
+            border-radius: 12px;
             padding: 0;
-            width: 120px;
+            // width: 120px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -244,11 +244,11 @@
             &__label {
               font-style: normal;
               font-weight: 600;
-              font-size: 10px;
-              line-height: 14px;
+              font-size: 12px;
+              line-height: 16px;
               text-align: center;
               color: #FDBB2C;
-              padding: 3px;
+              padding: 6px 0;
               background: rgba(253, 187, 44, 0.35);
               border-radius: 0px 0px 12px 12px;
             }
@@ -259,8 +259,8 @@
 
             &__title {
               font-weight: 600;
-              font-size: 12px;
-              line-height: 13px;
+              font-size: 14px;
+              line-height: 20px;
               text-align: center;
               color: #FFFFFF;
               padding: 12px;

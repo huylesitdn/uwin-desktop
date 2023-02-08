@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="">
-  @@include('../components/base/header.html', {title: 'Slot'})
+  @@include('../components/base/header.html', {title: 'Casino'})
   <body>
     
     <!-- Content -->
     <section class="main category-page">
-      @@include('../components/base/navbar.html')
+      @@include('../components/base/navbar.html', {without_login: true})
       <div class="category-page__content container">
 
         @@include('../components/base/layout.html', {
-          childContent: '../category/slot-content.html',
+          childContent: '../category/casino-content.html',
           menuActive: 0,
+          without_login: true
         })
         
       </div>
