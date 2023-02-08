@@ -7,18 +7,20 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
   .play-now-page__content #brandlogoTab > .nav-item > .nav-link {
     height: 100%;
-    width: 60px;
+    width: 88px;
+    min-height: 105px;
     background: #000A25;
     border-radius: 6px;
     padding: 3px 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 8px;
-    line-height: 11px;
+    font-size: 12px;
+    line-height: 16px;
     text-align: center;
     color: #FFFFFF; }
     .play-now-page__content #brandlogoTab > .nav-item > .nav-link div {
-      margin-top: -5px; }
+      margin-top: 0px;
+      min-height: 32px; }
     .play-now-page__content #brandlogoTab > .nav-item > .nav-link img {
       max-width: 55px;
       height: 55px; }
@@ -55,7 +57,7 @@
       color: #FDBB2C; }
 
 .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content {
-  padding: 15px; }
+  padding: 15px 0; }
   .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form {
     padding: 15px; }
     .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .title {

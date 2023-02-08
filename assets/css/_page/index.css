@@ -2069,14 +2069,14 @@
     display: flex;
     place-content: center;
     place-items: center;
-    width: 135px; }
+    width: 190px; }
 
 .exclusive-event-page__content__winner_list {
   background: #131D39;
   border-radius: 18px;
-  padding: 25px 15px;
+  padding: 25px;
   overflow: hidden;
-  margin-top: 50px; }
+  margin-top: 70px; }
   .exclusive-event-page__content__winner_list__header {
     position: relative;
     padding-bottom: 20px;
@@ -2111,12 +2111,12 @@
     .exclusive-event-page__content__winner_list__header__icon {
       position: absolute;
       top: -50px;
-      right: -30px;
+      right: -40px;
       max-width: 170px; }
     .exclusive-event-page__content__winner_list__header__description {
       font-weight: 500;
-      font-size: 13px;
-      line-height: 18px;
+      font-size: 18px;
+      line-height: 25px;
       color: #FFFFFF; }
       .exclusive-event-page__content__winner_list__header__description span {
         color: #FDBB2C; }
@@ -2154,7 +2154,7 @@
       color: #FFFFFF;
       margin-top: 5px; }
   .exclusive-event-page__content__winner_list__container {
-    height: 315px;
+    height: 400px;
     overflow: auto; }
     .exclusive-event-page__content__winner_list__container__item {
       display: flex;
@@ -2166,7 +2166,7 @@
         font-size: 16px;
         line-height: 22px;
         color: #FFFFFF;
-        margin-bottom: 2px; }
+        margin-bottom: 4px; }
       .exclusive-event-page__content__winner_list__container__item .name {
         font-weight: 400;
         font-size: 12px;
@@ -2236,7 +2236,7 @@
       display: flex;
       place-content: center;
       place-items: center;
-      min-width: 135px; }
+      min-width: 190px; }
 
 .play-now-page__content #brandlogoTab {
   flex-wrap: nowrap;
@@ -2247,18 +2247,20 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
   .play-now-page__content #brandlogoTab > .nav-item > .nav-link {
     height: 100%;
-    width: 60px;
+    width: 88px;
+    min-height: 105px;
     background: #000A25;
     border-radius: 6px;
     padding: 3px 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 8px;
-    line-height: 11px;
+    font-size: 12px;
+    line-height: 16px;
     text-align: center;
     color: #FFFFFF; }
     .play-now-page__content #brandlogoTab > .nav-item > .nav-link div {
-      margin-top: -5px; }
+      margin-top: 0px;
+      min-height: 32px; }
     .play-now-page__content #brandlogoTab > .nav-item > .nav-link img {
       max-width: 55px;
       height: 55px; }
@@ -2295,7 +2297,7 @@
       color: #FDBB2C; }
 
 .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content {
-  padding: 15px; }
+  padding: 15px 0; }
   .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form {
     padding: 15px; }
     .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .title {

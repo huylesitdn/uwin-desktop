@@ -11,20 +11,22 @@
       &>.nav-item {
         &>.nav-link {
           height: 100%;
-          width: 60px;
+          width: 88px;
+          min-height: 105px;
           background: #000A25;
           border-radius: 6px;
           padding: 3px 0;
 
           font-style: normal;
           font-weight: 400;
-          font-size: 8px;
-          line-height: 11px;
+          font-size: 12px;
+          line-height: 16px;
           text-align: center;
           color: #FFFFFF;
 
           div {
-            margin-top: -5px;
+            margin-top: 0px;
+            min-height: 32px;
           }
 
           img {
@@ -85,7 +87,7 @@
         }
 
         .brandlogo-tab-content {
-          padding: 15px;
+          padding: 15px 0;
 
           .mega888-slot-form {
             padding: 15px;
