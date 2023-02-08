@@ -331,6 +331,12 @@
   "3rd_Prize": "3rd Prize",
   "Special": "Special",
   "Consolation": "Consolation",
+  "category_page": {
+    "Fishing_God": "Fishing God",
+    "Tokyo_Kombat": "Tokyo Kombat",
+    "American_Kombat": "American Kombat",
+    "": ""
+  },
   "payout_table_content": {
     "title1": "Prize money for Big Forecast",
     "description1": "For this Forecast, as shown in the table below, with every $1 bet, the 1st Prize pays $2,500, 2nd Prize $1,000, 3rd Prize $500, Special Prize $200 and Consolution Prize $60.",
