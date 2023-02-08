@@ -78,6 +78,70 @@ a {
 }
 
 .modal {
+  .modal-dialog {
+    max-width: 600px;
+    margin: auto;
+
+    .modal-content {
+      background: #19264B;
+      border-radius: 12px;
+      padding: 20px 0;
+
+      .content {
+        padding: 20px 40px 0;
+      }
+
+      .modal-body {
+        padding: 0 40px;
+
+        .title {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+          color: #FDBB2C;
+          margin-bottom: 20px;
+        }
+
+        .text {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          color: #FFFFFF;
+
+          span {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #FDBB2C;
+          }
+        }
+
+        .action {
+          margin-top: 30px;
+          display: flex;
+          place-content: center;
+          place-items: center;
+          gap: 10px;
+
+          .btn {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+
+            height: 40px;
+            display: flex;
+            place-content: center;
+            place-items: center;
+          }
+        }
+      }
+    }
+  }
+
   &.slide-up {
     top: auto;
     bottom: 0;
@@ -345,7 +409,7 @@ a {
 
       .modal-content {
         background: #19264B;
-        border-radius: 16px;
+        border-radius: 12px;
         padding: 30px;
 
         .modal-body {

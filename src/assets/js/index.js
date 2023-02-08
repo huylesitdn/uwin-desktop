@@ -163,6 +163,21 @@ $(".choose-language").on("click", function (e) {
     console.log("No language setup");
   }
 });
+$(".btn-language").on("click", function (e) {
+  e.preventDefault();
+  const current_text = $(this).html();
+  switch (current_text) {
+    case "中":
+      translator.translatePageTo(LANGUAGES.ZH);
+      break;
+    case "EN":
+      translator.translatePageTo(LANGUAGES.EN);
+      break;
+    default:
+      break;
+  }
+  window.location.reload();
+});
 
 $(".universal__content__language").on("click", function (e) {
   const select_language = $(this).data("language");
@@ -833,6 +848,19 @@ function copyFunction(id) {
  */
 
 function initialize () {
+
+  // change text of current_text
+  switch (_get_language) {
+    case LANGUAGES.EN:
+      $('.btn-language').html('中')
+      break;
+    case LANGUAGES.ZH:
+      $('.btn-language').html('EN')
+      break;
+    default:
+      break;
+  }
+  // change text of current_text
 
   const forgetPasswordModalElm = $("#forgetPasswordModal");
   if (forgetPasswordModalElm.length > 0) {
