@@ -74,7 +74,7 @@
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
-    margin-bottom: 15px; }
+    margin-bottom: 25px; }
     .exclusive-event-page__content__winner_list__games__title a {
       font-weight: 400;
       font-size: 12px;
@@ -86,16 +86,16 @@
     place-content: space-between;
     place-items: center;
     flex-wrap: wrap;
-    gap: 7px 15px; }
+    gap: 15px; }
     .exclusive-event-page__content__winner_list__games__container__item img {
-      max-height: 50px; }
+      max-height: 80px; }
     .exclusive-event-page__content__winner_list__games__container__item div {
       font-weight: 400;
-      font-size: 9px;
-      line-height: 12px;
+      font-size: 10px;
+      line-height: 16px;
       text-align: center;
       color: #FFFFFF;
-      margin-top: 5px; }
+      margin-top: 8px; }
   .exclusive-event-page__content__winner_list__container {
     height: 400px;
     overflow: auto; }

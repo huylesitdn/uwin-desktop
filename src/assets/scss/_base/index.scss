@@ -601,8 +601,8 @@ a {
 
   &:hover {
     .action {
-      opacity: 1;
-      z-index: 1;
+      opacity: 1 !important;
+      z-index: 1 !important;
 
       .btn-demo {
         animation: pulseDemoBtn 1.5s infinite;

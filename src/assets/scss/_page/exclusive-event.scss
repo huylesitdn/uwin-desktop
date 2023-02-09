@@ -102,7 +102,7 @@
           font-size: 14px;
           line-height: 19px;
           color: #FFFFFF;
-          margin-bottom: 15px;
+          margin-bottom: 25px;
 
           a {
             font-weight: 400;
@@ -118,20 +118,20 @@
           place-content: space-between;
           place-items: center;
           flex-wrap: wrap;
-          gap: 7px 15px;
+          gap: 15px;
 
           &__item {
             img {
-              max-height: 50px;
+              max-height: 80px;
             }
 
             div {
               font-weight: 400;
-              font-size: 9px;
-              line-height: 12px;
+              font-size: 10px;
+              line-height: 16px;
               text-align: center;
               color: #FFFFFF;
-              margin-top: 5px;
+              margin-top: 8px;
             }
           }
         }

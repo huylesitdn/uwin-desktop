@@ -2131,7 +2131,7 @@
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
-    margin-bottom: 15px; }
+    margin-bottom: 25px; }
     .exclusive-event-page__content__winner_list__games__title a {
       font-weight: 400;
       font-size: 12px;
@@ -2143,16 +2143,16 @@
     place-content: space-between;
     place-items: center;
     flex-wrap: wrap;
-    gap: 7px 15px; }
+    gap: 15px; }
     .exclusive-event-page__content__winner_list__games__container__item img {
-      max-height: 50px; }
+      max-height: 80px; }
     .exclusive-event-page__content__winner_list__games__container__item div {
       font-weight: 400;
-      font-size: 9px;
-      line-height: 12px;
+      font-size: 10px;
+      line-height: 16px;
       text-align: center;
       color: #FFFFFF;
-      margin-top: 5px; }
+      margin-top: 8px; }
   .exclusive-event-page__content__winner_list__container {
     height: 400px;
     overflow: auto; }
@@ -2245,6 +2245,22 @@
   background: #131D39;
   padding: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .play-now-page__content #brandlogoTab .play-now {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(129, 129, 138, 0.18);
+    backdrop-filter: blur(8px);
+    top: 55px;
+    border: none;
+    z-index: 9; }
+    .play-now-page__content #brandlogoTab .play-now:hover {
+      opacity: 0.7; }
+    .play-now-page__content #brandlogoTab .play-now.left {
+      left: 0; }
+    .play-now-page__content #brandlogoTab .play-now.right {
+      right: 0; }
   .play-now-page__content #brandlogoTab > .nav-item > .nav-link {
     height: 100%;
     width: 88px;
@@ -2266,6 +2282,8 @@
       height: 55px; }
       .play-now-page__content #brandlogoTab > .nav-item > .nav-link img.active {
         display: none; }
+    .play-now-page__content #brandlogoTab > .nav-item > .nav-link:hover {
+      border-color: #FDBB2C; }
     .play-now-page__content #brandlogoTab > .nav-item > .nav-link.active {
       border-color: #FDBB2C; }
       .play-now-page__content #brandlogoTab > .nav-item > .nav-link.active img {
@@ -2309,9 +2327,9 @@
       padding-bottom: 30px; }
     .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group {
       background: rgba(255, 255, 255, 0.13);
-      border-radius: 4px;
-      min-height: 45px;
-      margin-bottom: 10px; }
+      border-radius: 6px;
+      min-height: 48px;
+      margin-bottom: 15px; }
       .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .input-group .form-control {
         background: transparent;
         border: none;
@@ -2335,8 +2353,7 @@
       font-size: 12px;
       line-height: 16px;
       color: #FDBB2C;
-      margin-top: 20px;
-      margin-bottom: 30px; }
+      margin: 30px 0; }
     .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .mega888-slot-form .btn {
       width: 100%;
       min-height: 45px;
@@ -2361,12 +2378,10 @@
         padding: 15px;
         margin-bottom: 15px;
         position: relative; }
-        .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .play-now-item__container__item img {
-          max-width: 75px; }
         .play-now-page__content #brandlogoTabContent > .tab-pane .brandlogo-tab-content .play-now-item__container__item .text {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 19px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
           text-align: center;
           color: #FFFFFF;
           margin-top: 8px; }

@@ -163,6 +163,7 @@ $(".choose-language").on("click", function (e) {
     console.log("No language setup");
   }
 });
+
 $(".btn-language").on("click", function (e) {
   e.preventDefault();
   const current_text = $(this).html();
@@ -213,6 +214,20 @@ $('#myNavbar #collapseCountry .collapse__item').on('click', function() {
     const collapseCountry = new bootstrap.Collapse(collapseCountryElm, {});
     collapseCountry.hide()
   }
+})
+
+// let playNowScrollLeft = 0
+$('.play-now').on('click', function() {
+  const isLeft = $(this).hasClass('left');
+  // console.log('-=-=-=-', isLeft)
+  // playNowScrollLeft = isLeft ? (playNowScrollLeft + 100) : (playNowScrollLeft - 100)
+  // $('#brandlogoTab').scrollTo({
+  //   left: lisLeft,
+  //   behavior: 'smooth',
+  // });
+  $('#brandlogoTab').animate({
+    scrollLeft: isLeft ? "-=200px" : "+=200px"
+  }, "slow");
 })
 
 function changeLanguageColor () {

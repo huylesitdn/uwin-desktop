@@ -3,7 +3,8 @@
   position: relative; }
 
 .layout > .content {
-  min-height: 400px; }
+  min-height: 400px;
+  position: relative; }
 
 .layout > .right .home__content__luck_surprise__title {
   font-size: 30px;
