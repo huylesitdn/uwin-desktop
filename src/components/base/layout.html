@@ -12,7 +12,9 @@
   </div>
   <div class="right col-3">
     @@if (!context.hideRightMenu) {
-      @@include('./right-menu.html')
+      @@include('./right-menu.html', {
+        without_login: '@@if (!context.without_login) {false}@@if (!!context.without_login) {true}'
+      })
     }
   </div>
 </div>
