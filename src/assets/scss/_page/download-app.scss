@@ -5,14 +5,12 @@
     padding-top: 20px;
 
     &__preview {
-      margin-top: 50px;
+      margin-top: 40px;
       padding-bottom: 30px;
 
       display: flex;
       overflow: auto;
       gap: 15px;
-      padding-left: var(--bs-gutter-x-mobile, 0.75rem);
-      padding-right: var(--bs-gutter-x-mobile, 0.75rem);
 
       img {
         max-width: 220px;
@@ -20,9 +18,13 @@
     }
 
     &__action {
+      display: flex;
+      gap: 15px;
+      width: 100%;
+
       .btn {
         border-radius: 4px;
-        width: 100%;
+        width: 50%;
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
@@ -43,6 +45,7 @@
 
       .coming-soon {
         position: relative;
+        width: 50%;
 
         span {
           position: absolute;
@@ -60,15 +63,17 @@
       margin-bottom: 25px;
 
       &__img {
-        width: 100px;
+        width: 140px;
       }
 
       &__content {
-        min-height: 100px;
+        min-height: 140px;
         display: flex;
         place-content: space-between;
         place-items: flex-start;
         flex-direction: column;
+        gap: 15px;
+        flex: 1;
 
         &__title {
           font-weight: 900;

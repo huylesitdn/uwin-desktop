@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Download App'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main download-app-page">
+      @@include('../components/base/navbar.html')
+      <div class="download-app-page__content container">
+        @@include('../components/base/layout.html', {
+          childContent: '../download-app-content.html',
+          menuActive: 0,
+          hideRightMenu: true,
+        })
+      </div>
+
+      <!-- MODAL -->
+      <!-- MODAL -->
+
+      
+      <!-- @@include('../components/base/navbar-footer.html') -->
+      
+      <!-- @@include('../components/base/navbar-bottom.html', {active: -1}) -->
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
