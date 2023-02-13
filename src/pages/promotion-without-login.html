@@ -5,12 +5,13 @@
     
     <!-- Content -->
     <section class="main promotion">
-      @@include('../components/base/navbar.html')
+      @@include('../components/base/navbar.html', {without_login: true})
       <div class="promotion__content container">
 
         @@include('../components/base/layout.html', {
           childContent: '../promotion/content.html',
           menuActive: 2,
+          without_login: true
         })
         
       </div>
