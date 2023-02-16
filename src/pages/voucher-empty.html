@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Voucher'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main voucher-page">
+      @@include('../components/base/navbar.html')
+      <div class="voucher-page__content container">
+
+        @@include('../components/base/layout.html', {
+          childContent: '../voucher/voucher-empty-content.html',
+          menuActive: 0,
+          hideRightMenu: true,
+        })
+        
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/voucher/success-redeemed-modal.html')
+      <!-- MODAL -->
+
+      
+      <!-- @@include('../components/base/navbar-footer.html') -->
+      
+      @@include('../components/base/navbar-bottom.html', {active: -1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

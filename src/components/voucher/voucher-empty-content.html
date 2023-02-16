@@ -1,0 +1,18 @@
+<a id="back_url" class="d-flex gap-4 align-items-center text-white mb-5" href="./">
+  <img src="assets/icons/left-white.svg" alt="" />
+  <div class="title" data-i18n="voucher_page.Redeem_Voucher"></div>
+</a>
+
+<form class="voucher-page__content__form" id="formVoucher" data-modal="successRedeemedModal" data-aos="fade-in">
+  <div class="voucher-page__content__form__input">
+    <label data-i18n="voucher_page.Voucher_Code" class="form-label"></label>
+    <input type="text" name="voucher" class="form-control" data-i18n-attr="placeholder" data-i18n="voucher_page.Enter_your_voucher_code"  />
+    <div class="form-text d-none" data-i18n="voucher_page.Please_enter_the_voucher_code"></div>
+  </div>
+  <button type="submit" class="btn btn-warning" data-i18n="voucher_page.Redeem"></button>
+</form>
+
+<div class="voucher-page__content__empty">
+  <img src="assets/icons/voucher-empty.svg" />
+  <div data-i18n="voucher_page.No_voucher_records_found"></div>
+</div>
