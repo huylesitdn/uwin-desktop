@@ -1,10 +1,10 @@
 
 <!-- Modal -->
-<div class="modal fade slide-up" id="selectPromotionModal" tabindex="-1" aria-labelledby="selectPromotionModalLabel" aria-hidden="true">
+<div class="modal fade" id="selectPromotionModal" tabindex="-1" aria-labelledby="selectPromotionModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <form class="promotion-modal modal-content">
-      <div class="close-button">
-        <img class="" src="assets/icons/down-white1.svg" alt="" data-bs-dismiss="modal" aria-label="Close"/>
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-title" data-i18n="deposit_page.Select_Promotion"></div>
       <div class="modal-body hide-scrollbar">
@@ -12,7 +12,7 @@
           <label class="promotion-modal__items__item">
             <input type="radio" name="promotion-modal-radio" class="d-none" value="deposit_page.select_promotion_content.title1"/>
             <div class="promotion-modal__items__item__content">
-              <div class="title" data-i18n="deposit_page.select_promotion_content.title1"></div>
+              <div class="title mb-0" data-i18n="deposit_page.select_promotion_content.title1"></div>
             </div>
             <div class="selected-bg"></div>
             <div class="checkmark"></div>

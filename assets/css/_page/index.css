@@ -2692,52 +2692,47 @@
         text-decoration-line: underline;
         color: #0089FF; }
 
-.deposit-page__content #mainTab {
-  border: none !important;
-  padding-top: 20px;
-  place-items: baseline;
-  gap: 25px; }
-  .deposit-page__content #mainTab > .nav-item > .nav-link {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 27px;
-    color: rgba(255, 255, 255, 0.4);
-    height: 100%;
-    padding: 0;
-    padding-bottom: 11px;
-    position: relative; }
-    .deposit-page__content #mainTab > .nav-item > .nav-link.active {
+.deposit-page__content {
+  margin-bottom: 150px; }
+  .deposit-page__content #mainTab {
+    border: none !important;
+    place-items: baseline;
+    gap: 25px; }
+    .deposit-page__content #mainTab > .nav-item > .nav-link {
       font-weight: 700;
-      font-size: 20px;
+      font-size: 14px;
       line-height: 27px;
-      color: #FFFFFF;
-      background: transparent;
-      border-color: transparent;
-      pointer-events: none; }
-      .deposit-page__content #mainTab > .nav-item > .nav-link.active::after {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: 0;
-        width: 40px;
-        height: 4px;
-        background: #FDBB2C;
-        border-radius: 3px; }
-    .deposit-page__content #mainTab > .nav-item > .nav-link:focus, .deposit-page__content #mainTab > .nav-item > .nav-link:hover {
-      border-color: transparent; }
-  @media only screen and (max-width: 390px) {
-    .deposit-page__content #mainTab {
-      gap: 5px;
-      place-content: space-between; } }
-
-.deposit-page__content #mainContent {
-  min-height: 300px;
-  padding-top: 17px; }
-  .deposit-page__content #mainContent > .tab-pane {
-    background-image: url(../images/deposit-bg.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: contain; }
+      color: rgba(255, 255, 255, 0.4);
+      height: 100%;
+      padding: 0;
+      padding-bottom: 11px;
+      position: relative; }
+      .deposit-page__content #mainTab > .nav-item > .nav-link.active {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+        background: transparent;
+        border-color: transparent;
+        pointer-events: none; }
+        .deposit-page__content #mainTab > .nav-item > .nav-link.active::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: 0;
+          width: 40px;
+          height: 4px;
+          background: #FDBB2C;
+          border-radius: 3px; }
+      .deposit-page__content #mainTab > .nav-item > .nav-link:focus, .deposit-page__content #mainTab > .nav-item > .nav-link:hover {
+        border-color: transparent; }
+    @media only screen and (max-width: 390px) {
+      .deposit-page__content #mainTab {
+        gap: 5px;
+        place-content: space-between; } }
+  .deposit-page__content #mainContent {
+    min-height: 300px;
+    padding-top: 40px; }
     .deposit-page__content #mainContent > .tab-pane#history-section {
       background-image: none !important; }
       .deposit-page__content #mainContent > .tab-pane#history-section #historyTab {
@@ -2886,7 +2881,7 @@
         .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .history-transaction-pagination .btn {
           width: 24px;
           height: 24px;
-          border-radius: 4px;
+          border-radius: 6px;
           min-width: initial;
           display: flex;
           place-content: center;
@@ -2952,7 +2947,7 @@
         background: rgba(255, 255, 255, 0.06); }
         .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .form-select {
           background: #19264B;
-          border-radius: 4px;
+          border-radius: 6px;
           min-height: 30px;
           border-color: transparent;
           color: #fff;
@@ -2967,7 +2962,7 @@
           margin-bottom: 7px; }
           .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .input-group .form-control {
             background: #19264B;
-            border-radius: 4px;
+            border-radius: 6px;
             min-height: 30px;
             font-weight: 400;
             font-size: 12px;
@@ -2988,7 +2983,7 @@
             padding-right: 5px; }
         .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .btn-warning {
           background: #FDBB2C;
-          border-radius: 4px;
+          border-radius: 6px;
           font-weight: 700;
           font-size: 12px;
           line-height: 16px;
@@ -3012,27 +3007,30 @@
         line-height: 16px;
         color: rgba(255, 255, 255, 0.6);
         margin-bottom: 15px; }
-    .deposit-page__content #mainContent > .tab-pane .form__action .btn {
-      width: 100%;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 22px;
-      text-align: center;
-      min-height: 50px;
+    .deposit-page__content #mainContent > .tab-pane .form__action {
       display: flex;
-      place-content: center;
-      place-items: center;
-      margin-bottom: 5px; }
-      .deposit-page__content #mainContent > .tab-pane .form__action .btn-warning {
-        background: #FDBB2C;
-        border-radius: 4px; }
-      .deposit-page__content #mainContent > .tab-pane .form__action .btn-link {
-        color: #FFFFFF;
-        text-decoration: none; }
-      .deposit-page__content #mainContent > .tab-pane .form__action .btn:focus {
-        box-shadow: none; }
+      gap: 25px; }
+      .deposit-page__content #mainContent > .tab-pane .form__action .btn {
+        width: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        min-height: 50px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        margin-bottom: 5px; }
+        .deposit-page__content #mainContent > .tab-pane .form__action .btn-warning {
+          background: #FDBB2C;
+          border-radius: 6px; }
+        .deposit-page__content #mainContent > .tab-pane .form__action .btn-link {
+          color: #FFFFFF;
+          text-decoration: none; }
+        .deposit-page__content #mainContent > .tab-pane .form__action .btn:focus {
+          box-shadow: none; }
     .deposit-page__content #mainContent > .tab-pane .form__container {
-      margin-bottom: 25px;
+      margin-bottom: 32px;
       position: relative; }
       .deposit-page__content #mainContent > .tab-pane .form__container .error {
         font-weight: 400;
@@ -3063,7 +3061,7 @@
           left: 0; }
         .deposit-page__content #mainContent > .tab-pane .form__container .input-group .btn-outline-warning {
           background: rgba(253, 187, 44, 0.3);
-          border-radius: 4px;
+          border-radius: 6px;
           font-weight: 400;
           font-size: 14px;
           line-height: 19px;
@@ -3081,7 +3079,7 @@
           margin-bottom: 17px; }
         .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address {
           background: #222C43;
-          border-radius: 4px;
+          border-radius: 6px;
           padding: 10px 13px; }
           .deposit-page__content #mainContent > .tab-pane .form__container__network_content__address__title {
             font-weight: 700;
@@ -3109,7 +3107,7 @@
             text-align: center;
             color: #000000;
             background: #FDBB2C;
-            border-radius: 4px;
+            border-radius: 6px;
             min-height: 40px;
             display: flex;
             place-content: center;
@@ -3133,7 +3131,7 @@
         gap: 10px !important; }
         .deposit-page__content #mainContent > .tab-pane .form__container .form-radio .btn-check:checked + .form-radio__label .btn {
           border: 1px solid #FDBB2C;
-          border-radius: 4px;
+          border-radius: 6px;
           background-color: rgba(255, 255, 255, 0.13);
           box-shadow: none;
           color: #FFFFFF; }
@@ -3156,7 +3154,7 @@
           margin-top: 5px; }
       .deposit-page__content #mainContent > .tab-pane .form__container .select_bank_content {
         border: 1px solid rgba(255, 255, 255, 0.13);
-        border-radius: 4px;
+        border-radius: 6px;
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
@@ -3184,7 +3182,7 @@
             padding: 0; }
       .deposit-page__content #mainContent > .tab-pane .form__container .form-choose {
         border: 1px dashed #FFFFFF;
-        border-radius: 4px;
+        border-radius: 6px;
         padding: 20px;
         font-weight: 400;
         font-size: 14px;
@@ -3200,12 +3198,12 @@
         gap: 8px; }
         .deposit-page__content #mainContent > .tab-pane .form__container .btn-group .btn-check:checked + .btn {
           border: 1px solid #FDBB2C;
-          border-radius: 4px;
+          border-radius: 6px;
           background-color: rgba(255, 255, 255, 0.13);
           box-shadow: none; }
         .deposit-page__content #mainContent > .tab-pane .form__container .btn-group .btn {
           border: 1px solid rgba(255, 255, 255, 0.13);
-          border-radius: 4px;
+          border-radius: 6px;
           min-height: 40px;
           display: flex;
           place-content: center;
@@ -3222,7 +3220,7 @@
         width: 100% !important; }
         .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown {
           background: #222C43;
-          border-radius: 4px;
+          border-radius: 6px;
           width: 100% !important;
           z-index: 1;
           position: initial;
@@ -3233,7 +3231,7 @@
             .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown .select2-results__options .select2-results__option--selectable.select2-results__option--highlighted {
               background: transparent !important;
               color: #fff; }
-            .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown .select2-results__options .select2-results__option--selectable.select2-results__option--selected {
+            .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown .select2-results__options .select2-results__option--selectable.select2-results__option--highlighted, .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .select2-dropdown .select2-results__options .select2-results__option--selectable.select2-results__option--selected {
               background: transparent !important;
               color: #FDBB2C !important; }
         .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .selection {
@@ -3241,7 +3239,7 @@
           .deposit-page__content #mainContent > .tab-pane .form__container .select2-container .selection .select2-selection {
             border: 1px solid rgba(255, 255, 255, 0.13);
             background-color: transparent;
-            border-radius: 4px;
+            border-radius: 6px;
             min-height: 50px;
             font-weight: 400;
             font-size: 14px;
@@ -3271,7 +3269,7 @@
       .deposit-page__content #mainContent > .tab-pane .form__container .form-control {
         border: 1px solid rgba(255, 255, 255, 0.13);
         background-color: transparent;
-        border-radius: 4px;
+        border-radius: 6px;
         min-height: 50px;
         font-weight: 400;
         font-size: 14px;
@@ -3291,7 +3289,7 @@
       .deposit-page__content #mainContent > .tab-pane .form__container .input-group {
         margin-bottom: 10px;
         border: 1px solid rgba(255, 255, 255, 0.13);
-        border-radius: 4px; }
+        border-radius: 6px; }
         .deposit-page__content #mainContent > .tab-pane .form__container .input-group .form-control {
           margin-bottom: 0; }
           .deposit-page__content #mainContent > .tab-pane .form__container .input-group .form-control:disabled {
@@ -3331,11 +3329,12 @@
             color: #000000; }
     .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab {
       background: rgba(255, 255, 255, 0.13);
-      border-radius: 4px;
+      border-radius: 6px;
       border-bottom: none;
       place-content: space-between;
       place-items: center;
-      padding: 5px; }
+      padding: 5px;
+      gap: 2px; }
       .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item {
         flex: 1 0 0%; }
         .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link {
@@ -3346,27 +3345,28 @@
           text-align: center;
           color: rgba(255, 255, 255, 0.5);
           padding: 0px 1px;
-          min-height: 34px; }
-          .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link.active {
+          min-height: 40px; }
+          .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link:hover, .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link.active {
             background: #FDBB2C;
             border-radius: 2px;
             color: #000000;
             border-color: transparent; }
-          .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link:focus, .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link:hover {
+          .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainTab .nav-item .nav-link:hover {
+            opacity: 0.5;
             border-color: transparent; }
     .deposit-page__content #mainContent > .tab-pane .deposit-content #depositMainContent {
-      padding: 20px 0; }
+      padding: 40px 0; }
     .deposit-page__content #mainContent > .tab-pane .main-wallet {
       background-image: url(../images/main-wallet-bg-1.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      border-radius: 12px;
+      border-radius: 10px;
       position: relative;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       overflow: hidden; }
       .deposit-page__content #mainContent > .tab-pane .main-wallet__top {
-        padding: 20px 15px;
+        padding: 25px;
         display: flex;
         place-content: space-between;
         place-items: center; }
@@ -3383,7 +3383,7 @@
         .deposit-page__content #mainContent > .tab-pane .main-wallet__top__action .btn {
           background: rgba(255, 255, 255, 0.3);
           border: none;
-          border-radius: 4px;
+          border-radius: 6px;
           font-weight: 600;
           font-size: 12px;
           line-height: 16px;
@@ -3392,7 +3392,7 @@
           color: #FFFFFF; }
       .deposit-page__content #mainContent > .tab-pane .main-wallet__footer {
         background: rgba(0, 0, 0, 0.5);
-        padding: 8px 15px;
+        padding: 15px 25px;
         display: flex;
         place-content: space-between;
         place-items: center; }
@@ -3408,8 +3408,17 @@
           color: #FFFFFF; }
 
 #selectPromotionModal .modal-dialog .modal-content {
-  padding: 0;
-  padding-top: 15px; }
+  padding: 0; }
+  #selectPromotionModal .modal-dialog .modal-content .modal-header {
+    padding: 25px 40px 0;
+    border-bottom: none; }
+    #selectPromotionModal .modal-dialog .modal-content .modal-header .btn-close {
+      text-align: right;
+      padding-bottom: 5px;
+      opacity: 1;
+      background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat; }
+      #selectPromotionModal .modal-dialog .modal-content .modal-header .btn-close:hover {
+        opacity: 0.5; }
   #selectPromotionModal .modal-dialog .modal-content .modal-title {
     padding-top: 10px;
     padding-bottom: 25px;
@@ -3420,11 +3429,8 @@
     color: #FDBB2C; }
   #selectPromotionModal .modal-dialog .modal-content .modal-footer {
     border-top: none;
-    background: rgba(16, 55, 83, 0.9);
-    box-shadow: 0px -7px 34px 10px #103753;
-    -webkit-box-shadow: 0px -7px 34px 10px #103753;
-    -moz-box-shadow: 0px -7px 34px 10px #103753;
-    padding-top: 0; }
+    padding: 40px;
+    padding-top: 10px; }
     #selectPromotionModal .modal-dialog .modal-content .modal-footer .btn {
       min-height: 50px;
       display: flex;
@@ -3432,14 +3438,14 @@
       place-items: center;
       width: 100%;
       background: #FDBB2C;
-      border-radius: 4px;
+      border-radius: 6px;
       font-weight: 700;
       font-size: 16px;
       line-height: 22px;
       text-align: center;
       color: #000000; }
   #selectPromotionModal .modal-dialog .modal-content .modal-body {
-    padding: 0 15px; }
+    padding: 0 40px; }
     #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal .action {
       margin-top: 20px; }
       #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal .action .btn {
@@ -3449,7 +3455,7 @@
         place-items: center;
         width: 100%;
         background: #FDBB2C;
-        border-radius: 4px;
+        border-radius: 6px;
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
@@ -3457,13 +3463,14 @@
         color: #000000; }
     #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item {
       border: 1px solid rgba(255, 255, 255, 0.13);
-      border-radius: 4px;
+      border-radius: 6px;
       display: flex;
       place-content: space-between;
       place-items: center;
-      padding: 10px 13px;
+      padding: 15px;
       margin-bottom: 15px;
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
       #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item .checkmark {
         height: 17px;
         width: 17px;
@@ -3487,6 +3494,7 @@
           display: none; }
       #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item input:checked ~ .checkmark:after {
         display: block; }
+      #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item:hover .selected-bg,
       #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item input:checked ~ .selected-bg {
         content: "";
         position: absolute;
@@ -3494,7 +3502,8 @@
         right: 0;
         bottom: 0;
         top: 0;
-        background: rgba(255, 255, 255, 0.13); }
+        background: rgba(255, 255, 255, 0.13);
+        border-radius: 6px; }
       #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content {
         font-weight: 400;
         font-size: 14px;
@@ -3505,15 +3514,25 @@
           font-weight: 700;
           font-size: 14px;
           line-height: 19px;
-          color: #FFFFFF; }
+          color: #FFFFFF;
+          text-align: left; }
         #selectPromotionModal .modal-dialog .modal-content .modal-body .promotion-modal__items__item__content .description {
           margin-top: 12px; }
 
-#gameBalanceModal .close-button {
-  padding-bottom: 10px; }
+#gameBalanceModal .modal-content .modal-header {
+  padding: 20px 40px;
+  border-bottom: none; }
+  #gameBalanceModal .modal-content .modal-header .btn-close {
+    text-align: right;
+    padding-bottom: 5px;
+    opacity: 1;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat; }
+    #gameBalanceModal .modal-content .modal-header .btn-close:hover {
+      opacity: 0.5; }
 
 #gameBalanceModal .game-balance-content {
-  overflow-y: auto; }
+  overflow-y: auto;
+  padding: 0 40px; }
   #gameBalanceModal .game-balance-content__item {
     display: flex;
     place-content: space-between;
@@ -3536,7 +3555,7 @@
       min-width: 80px; }
       #gameBalanceModal .game-balance-content__item .action .btn {
         background: #FDBB2C;
-        border-radius: 4px;
+        border-radius: 6px;
         min-height: 30px;
         font-weight: 600;
         font-size: 12px;
