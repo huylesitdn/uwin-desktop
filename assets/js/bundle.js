@@ -1001,6 +1001,11 @@ function initialize () {
     placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
     dropdownParent: $('#transferToDropdown')
   });
+  const select_address = $('.select-address').select2({
+    minimumResultsForSearch: -1,
+    placeholder: translator.translateForKey('deposit_page.Please_select', _get_language),
+    dropdownParent: $('#selectAddressDropdown')
+  });
   $('.select-bank').on('select2:select', function (e) {
     var data = e.params.data;
     const _value = data.text
@@ -1144,6 +1149,7 @@ function initialize () {
     select_bank_select1.val(null).trigger("change");
     select_bank_select2.val(null).trigger("change");
     select_bank_select3.val(null).trigger("change");
+    select_address.val(null).trigger("change");
   })
 
 
@@ -1251,6 +1257,37 @@ function initialize () {
       },
       select_bank: translator.translateForKey('deposit_page.Please_select_one', _get_language),
       bank_account_number: translator.translateForKey('deposit_page.Please_enter_your_bank_account_number', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log(form)
+      // window.location.href = '/thank-you.html'
+
+      withdrawalSuccessModal.show()
+    }
+  });
+
+  $("#withdrawalCryptoForm").validate({
+    rules: {
+      amount_SGD: {
+        required: true,
+        min: 0
+      },
+      amount_USDT: {
+        required: true,
+        min: 0
+      },
+      select_address: "required",
+    },
+    messages: {
+      amount_SGD: {
+        required: translator.translateForKey('deposit_page.Amount_required', _get_language),
+        min: translator.translateForKey('deposit_page.Amount_SGD_required_min', _get_language)
+      },
+      amount_USDT: {
+        required: translator.translateForKey('deposit_page.Amount_required', _get_language),
+        min: translator.translateForKey('deposit_page.Amount_SGD_required_min', _get_language)
+      },
+      select_address: translator.translateForKey('deposit_page.Please_select_one', _get_language),
     },
     submitHandler: function(form) {
       console.log(form)

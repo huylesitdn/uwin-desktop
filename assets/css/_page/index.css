@@ -2991,6 +2991,19 @@
           color: #000000;
           min-height: 30px;
           width: 100%; }
+    .deposit-page__content #mainContent > .tab-pane .form__info {
+      height: 40px;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 6px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #FFFFFF;
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      padding: 10px;
+      margin-bottom: 32px; }
     .deposit-page__content #mainContent > .tab-pane .form__reminder {
       border-top: 1px solid rgba(255, 255, 255, 0.13);
       padding: 6px 0;
@@ -3055,7 +3068,18 @@
         .deposit-page__content #mainContent > .tab-pane .form__container .input-group .form-control {
           min-height: initial;
           border: none; }
-        .deposit-page__content #mainContent > .tab-pane .form__container .input-group .error#amount_SGD-error {
+        .deposit-page__content #mainContent > .tab-pane .form__container .input-group .input-group-text {
+          background: #212B42;
+          border-radius: 0px 4px 4px 0px;
+          font-size: 14px;
+          line-height: 19px;
+          font-weight: 700;
+          color: #FFFFFF;
+          min-width: 80px;
+          display: flex;
+          place-content: center;
+          place-items: center; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .input-group .error#amount_USDT-error, .deposit-page__content #mainContent > .tab-pane .form__container .input-group .error#amount_SGD-error {
           position: absolute;
           bottom: -25px;
           left: 0; }
