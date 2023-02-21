@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'History Detail'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main history-detail-page">
+      @@include('../components/base/navbar.html')
+
+      <div class="history-detail-page__content">
+
+        <div class="container mb-5">
+
+          @@include('../components/base/layout.html', {
+            childContent: '../history-detail-content.html',
+            menuActive: 1,
+            hideRightMenu: true,
+          })
+          
+        </div>
+        
+        
+      </div>
+
+      <!-- MODAL -->
+      <!-- MODAL -->
+
+      
+      <!-- @@include('../components/base/navbar-bottom.html', {active: 1}) -->
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

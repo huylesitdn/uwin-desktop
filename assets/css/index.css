@@ -65,6 +65,11 @@ a {
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 4px; }
 
+#back_url {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px; }
+
 .modal .modal-dialog {
   max-width: 600px;
   margin: 25px auto; }
@@ -3519,7 +3524,10 @@ a {
       .deposit-page__content #mainContent > .tab-pane#history-section #historyTab {
         background: rgba(255, 255, 255, 0.06);
         place-content: center;
-        border-bottom: none; }
+        border-bottom: none;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        padding: 10px 0; }
         .deposit-page__content #mainContent > .tab-pane#history-section #historyTab .nav-item .nav-link {
           font-weight: 600;
           font-size: 14px;
@@ -3536,7 +3544,7 @@ a {
             height: 18px;
             width: 1px;
             background-color: #fff; }
-          .deposit-page__content #mainContent > .tab-pane#history-section #historyTab .nav-item .nav-link.active {
+          .deposit-page__content #mainContent > .tab-pane#history-section #historyTab .nav-item .nav-link:hover, .deposit-page__content #mainContent > .tab-pane#history-section #historyTab .nav-item .nav-link.active {
             background-color: transparent;
             border-color: transparent;
             color: #FDBB2C; }
@@ -3594,8 +3602,8 @@ a {
             padding: 7px 15px; }
             .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .betting-record-table-collapse__content .card-body .btn-link {
               font-weight: 400;
-              font-size: 10px;
-              line-height: 14px;
+              font-size: 14px;
+              line-height: 19px;
               text-align: center;
               text-decoration-line: underline;
               color: rgba(255, 255, 255, 0.5);
@@ -3605,16 +3613,16 @@ a {
               margin-bottom: 5px; }
               .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .betting-record-table-collapse__content .card-body .table thead tr th {
                 font-weight: 400;
-                font-size: 10px;
-                line-height: 14px;
+                font-size: 14px;
+                line-height: 20px;
                 text-align: center;
                 color: rgba(255, 255, 255, 0.5);
                 padding-top: 1px;
                 padding-bottom: 1px; }
               .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .betting-record-table-collapse__content .card-body .table tbody tr td {
                 font-weight: 400;
-                font-size: 10px;
-                line-height: 14px;
+                font-size: 12px;
+                line-height: 16px;
                 text-align: center;
                 color: #FFFFFF;
                 padding-top: 5px;
@@ -3624,11 +3632,13 @@ a {
         .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .betting-record-table .table thead tr th {
           background: #19264B;
           font-weight: 400;
-          font-size: 10px;
-          line-height: 14px;
+          font-size: 14px;
+          line-height: 20px;
           color: rgba(255, 255, 255, 0.5);
           vertical-align: middle;
-          text-align: center; }
+          text-align: center;
+          padding-left: 30px;
+          padding-right: 30px; }
         .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .betting-record-table .table tbody {
           border-color: transparent; }
           .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .betting-record-table .table tbody tr td {
@@ -3637,8 +3647,7 @@ a {
             line-height: 16px;
             color: #FFFFFF;
             text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 10px 30px;
             background: rgba(255, 255, 255, 0.1); }
             .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .betting-record-table .table tbody tr td.warning {
               color: #FDBB2C; }
@@ -3701,7 +3710,6 @@ a {
             color: #FFFFFF;
             margin-bottom: 3px; }
           .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .history-transaction-container__item__left .currency {
-            font-weight: 500;
             font-size: 14px;
             line-height: 19px;
             color: rgba(255, 255, 255, 0.5); }
@@ -3725,53 +3733,58 @@ a {
             color: rgba(255, 255, 255, 0.5); }
       .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter {
         padding: 5px 25px 20px 25px;
-        background: rgba(255, 255, 255, 0.06); }
-        .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .form-select {
-          background: #19264B;
-          border-radius: 6px;
-          min-height: 30px;
-          border-color: transparent;
-          color: #fff;
-          margin-bottom: 7px;
-          padding-top: 3px;
-          padding-bottom: 3px;
-          font-size: 12px;
-          line-height: 16px; }
-          .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .form-select:invalid {
-            color: rgba(255, 255, 255, 0.4); }
-        .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .input-group {
-          margin-bottom: 7px; }
-          .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .input-group .form-control {
-            background: #19264B;
+        background: rgba(255, 255, 255, 0.06);
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        margin-bottom: 40px; }
+        .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container {
+          margin-bottom: 12px; }
+          .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .form-select {
+            background-color: #19264B;
             border-radius: 6px;
             min-height: 30px;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            color: #fff;
-            border-color: transparent; }
-            .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .input-group .form-control::placeholder {
-              color: rgba(255, 255, 255, 0.4); }
-          .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .input-group .input-group-text {
-            background: transparent;
             border-color: transparent;
-            font-weight: 400;
+            color: #fff;
+            margin-bottom: 7px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 12px;
+            line-height: 16px; }
+            .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .form-select:invalid {
+              color: rgba(255, 255, 255, 0.4); }
+          .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .input-group {
+            margin-bottom: 7px; }
+            .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .input-group .form-control {
+              background: #19264B;
+              border-radius: 6px;
+              min-height: 30px;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              color: #fff;
+              border-color: transparent; }
+              .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .input-group .form-control::placeholder {
+                color: rgba(255, 255, 255, 0.4); }
+            .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .input-group .input-group-text {
+              background: transparent;
+              border-color: transparent;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              text-align: center;
+              color: #FFFFFF;
+              padding-left: 15px;
+              padding-right: 15px; }
+          .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .btn-warning {
+            background: #FDBB2C;
+            border-radius: 6px;
+            font-weight: 700;
             font-size: 12px;
             line-height: 16px;
             text-align: center;
-            color: #FFFFFF;
-            padding-left: 5px;
-            padding-right: 5px; }
-        .deposit-page__content #mainContent > .tab-pane#history-section #historyTabContent .tab-pane .filter__container .btn-warning {
-          background: #FDBB2C;
-          border-radius: 6px;
-          font-weight: 700;
-          font-size: 12px;
-          line-height: 16px;
-          text-align: center;
-          color: #000000;
-          min-height: 30px;
-          width: 100%; }
+            color: #000000;
+            min-height: 30px;
+            width: 100%; }
     .deposit-page__content #mainContent > .tab-pane .form__info {
       height: 40px;
       background: rgba(255, 255, 255, 0.06);
@@ -3849,7 +3862,9 @@ a {
         .deposit-page__content #mainContent > .tab-pane .form__container .input-group .form-control {
           min-height: initial;
           border: none; }
-        .deposit-page__content #mainContent > .tab-pane .form__container .input-group .input-group-text {
+          .deposit-page__content #mainContent > .tab-pane .form__container .input-group .form-control:focus {
+            box-shadow: none; }
+        .deposit-page__content #mainContent > .tab-pane .form__container .input-group .input-group-currency {
           background: #212B42;
           border-radius: 0px 4px 4px 0px;
           font-size: 14px;
@@ -4368,9 +4383,6 @@ a {
         text-align: center;
         color: #000000; }
 
-.history-detail-page .navbar.fixed-top .title {
-  text-transform: capitalize; }
-
 .history-detail-page__content__container {
   background: #000B26;
   margin-bottom: 15px; }
@@ -4379,19 +4391,19 @@ a {
     background: transparent; }
     .history-detail-page__content__container__item .card-header {
       background: #19264B;
-      border-radius: 4px 4px 0px 0px;
+      border-radius: 8px 8px 0px 0px;
       padding: 0;
       display: flex;
       place-content: space-between;
       place-items: center;
-      height: 26px; }
+      height: 30px; }
       .history-detail-page__content__container__item .card-header .title {
         display: flex;
         place-content: flex-start;
         place-items: center;
         font-weight: 700;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 19px;
         color: #FDBB2C;
         height: 100%; }
         .history-detail-page__content__container__item .card-header .title span {
@@ -4410,17 +4422,17 @@ a {
           margin-right: 15px; }
       .history-detail-page__content__container__item .card-header .date {
         font-weight: 400;
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 12px;
+        line-height: 16px;
         text-align: right;
         color: rgba(255, 255, 255, 0.5);
         padding-right: 20px; }
     .history-detail-page__content__container__item .card-body {
       border: 1px solid rgba(255, 255, 255, 0.13);
       border-top: 0;
-      border-radius: 0 0 4px 4px;
+      border-radius: 0 0 8px 8px;
       background: transparent;
-      padding: 7px 15px; }
+      padding: 15px; }
       .history-detail-page__content__container__item .card-body .content {
         font-weight: 400;
         font-size: 12px;
@@ -4441,23 +4453,23 @@ a {
         .history-detail-page__content__container__item .card-body .table thead tr th {
           background: #19264B;
           font-weight: 400;
-          font-size: 10px;
-          line-height: 14px;
+          font-size: 14px;
+          line-height: 20px;
           text-align: center;
           color: rgba(255, 255, 255, 0.5);
-          padding-top: 5px;
-          padding-bottom: 5px;
+          padding-top: 10px;
+          padding-bottom: 10px;
           vertical-align: middle; }
         .history-detail-page__content__container__item .card-body .table tbody {
           border-color: transparent; }
           .history-detail-page__content__container__item .card-body .table tbody tr td {
             font-weight: 400;
-            font-size: 10px;
-            line-height: 14px;
+            font-size: 12px;
+            line-height: 16px;
             text-align: center;
             color: #FFFFFF;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             background: rgba(255, 255, 255, 0.1); }
             .history-detail-page__content__container__item .card-body .table tbody tr td.warning {
               color: #FDBB2C; }

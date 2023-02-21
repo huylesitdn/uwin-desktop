@@ -1,12 +1,5 @@
 .history-detail-page {
-  .navbar {
-    &.fixed-top {
-      .title {
-        text-transform: capitalize;
-      }
-    }
-  }
-
+  
   &__content {
     &__container {
       background: #000B26;
@@ -18,20 +11,20 @@
 
         .card-header {
           background: #19264B;
-          border-radius: 4px 4px 0px 0px;
+          border-radius: 8px 8px 0px 0px;
           padding: 0;
           display: flex;
           place-content: space-between;
           place-items: center;
-          height: 26px;
+          height: 30px;
 
           .title {
             display: flex;
             place-content: flex-start;
             place-items: center;
             font-weight: 700;
-            font-size: 12px;
-            line-height: 16px;
+            font-size: 14px;
+            line-height: 19px;
             color: #FDBB2C;
             height: 100%;
 
@@ -55,8 +48,8 @@
 
           .date {
             font-weight: 400;
-            font-size: 10px;
-            line-height: 14px;
+            font-size: 12px;
+            line-height: 16px;
             text-align: right;
             color: rgba(255, 255, 255, 0.5);
             padding-right: 20px;
@@ -66,9 +59,9 @@
         .card-body {
           border: 1px solid rgba(255, 255, 255, 0.13);
           border-top: 0;
-          border-radius: 0 0 4px 4px;
+          border-radius: 0 0 8px 8px;
           background: transparent;
-          padding: 7px 15px;
+          padding: 15px;
 
           .content {
             font-weight: 400;
@@ -97,12 +90,12 @@
                 th {
                   background: #19264B;
                   font-weight: 400;
-                  font-size: 10px;
-                  line-height: 14px;
+                  font-size: 14px;
+                  line-height: 20px;
                   text-align: center;
                   color: rgba(255, 255, 255, 0.5);
-                  padding-top: 5px;
-                  padding-bottom: 5px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
                   vertical-align: middle;
                 }
               }
@@ -114,12 +107,12 @@
               tr {
                 td {
                   font-weight: 400;
-                  font-size: 10px;
-                  line-height: 14px;
+                  font-size: 12px;
+                  line-height: 16px;
                   text-align: center;
                   color: #FFFFFF;
-                  padding-top: 5px;
-                  padding-bottom: 5px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
                   background: rgba(255, 255, 255, 0.1);
 
                   &.warning {
