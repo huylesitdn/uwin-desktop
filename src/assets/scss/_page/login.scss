@@ -7,7 +7,14 @@
   min-height: 100vh;
   padding: 0;
 
+  .login-content {
+    max-width: 600px;
+    margin: auto;
+    padding: 55px 0;
+  }
+
   &__content {
+
     .nav-tabs {
       border-bottom: 0;
       margin-bottom: 25px;
@@ -20,6 +27,7 @@
           color: rgba(255, 255, 255, 0.5);
           padding: 0 30px 0 0;
 
+          &:hover,
           &.active {
             color: #FDBB2C;
             background: transparent;
@@ -32,9 +40,9 @@
     .tab-content {
       .login__form {
         .download-app {
-          margin-top: 33px;
+          margin-top: 40px;
           border: 2px solid #194284;
-          border-radius: 4px;
+          border-radius: 8px;
           gap: 0;
 
           place-content: flex-start;
@@ -47,20 +55,20 @@
           }
 
           &__content {
-            padding: 7px 0 7px 10px;
+            padding: 10px 0 10px 10px;
             width: 100%;
 
             &__title {
               font-weight: 600;
-              font-size: 14px;
-              line-height: 19px;
+              font-size: 16px;
+              line-height: 22px;
               color: #FFFFFF;
             }
 
             &__description {
               font-weight: 400;
-              font-size: 12px;
-              line-height: 16px;
+              font-size: 14px;
+              line-height: 19px;
               color: rgba(255, 255, 255, 0.7);
             }
           }
@@ -85,7 +93,7 @@
         }
 
         .btn-login {
-          margin-top: 20px;
+          margin-top: 40px;
           background: #FDBB2C;
           border-radius: 4px;
           min-height: 50px;
@@ -105,7 +113,7 @@
         }
 
         .input-group {
-          margin-bottom: 15px;
+          margin-bottom: 25px;
           display: flex;
           flex-direction: column;
 
@@ -169,11 +177,10 @@
   }
 
   &__logo {
-    padding-top: 47px;
-    padding-bottom: 37px;
+    padding: 50px 0;
 
     img {
-      max-width: 120px;
+      max-width: 190px;
     }
   }
 
@@ -181,6 +188,12 @@
     position: relative;
     background: transparent !important;
     box-shadow: none !important;
+    min-width: auto !important;
+    min-height: 40px !important;
+
+    .content {
+      min-height: 40px !important;
+    }
 
     .dropdown {
       .dropdown-toggle {
@@ -196,6 +209,7 @@
         text-align: center;
 
         color: #FFFFFF;
+        padding: 0 5px !important;
 
         img {
           max-width: 18px;

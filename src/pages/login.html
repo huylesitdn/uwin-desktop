@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Login'})
+  <body>
+    <!-- Content -->
+    <section class="login-page">
+      <div class="login-content">
+        <nav class="navbar fixed-top navbar-light login-page__navbar">
+          <div class="content justify-content-between w-100">
+            <a class="" href="/index-without-login.html">
+              <img src="assets/icons/left-white.svg" alt="" />
+            </a>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/login/SG-flag.png" alt="" /> SG
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/images/login/MY-flag.png" alt="" /> MY
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="login-page__logo" data-aos="fade-in">
+            <img src="assets/icons/logo.png" alt="" />
+          </div>
+          
+          <div class="login-page__content">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="login-content-tab" data-bs-toggle="tab" data-bs-target="#login-content" type="button" role="tab" aria-controls="login-content" aria-selected="true" data-i18n="login_page.LOGIN" data-aos="fade-up"></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="sign-up-content-tab" data-bs-toggle="tab" data-bs-target="#sign-up-content" type="button" role="tab" aria-controls="sign-up-content" aria-selected="false" data-i18n="login_page.SIGN_UP" data-aos="fade-up"></button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="login-content" role="tabpanel" aria-labelledby="login-content-tab">
+                <div data-aos="fade-up">
+                  @@include('../components/login-form.html')
+                </div>
+              </div>
+              <div class="tab-pane fade" id="sign-up-content" role="tabpanel" aria-labelledby="sign-up-content-tab">
+                <div data-aos="fade-up">
+                  @@include('../components/register-form.html')
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('../components/forget-password-modal.html')
+    @@include('../components/forget-password-success-modal.html')
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

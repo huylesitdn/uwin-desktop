@@ -37,9 +37,7 @@
         position: relative; }
     .navbar.fixed-top .content {
       display: flex;
-      min-height: 70px;
-      padding-left: 15px;
-      padding-right: 15px; }
+      min-height: 70px; }
       .navbar.fixed-top .content .avatar-dropdown .dropdown-menu {
         background: #131D39;
         border: 1px solid rgba(255, 255, 255, 0.06);
