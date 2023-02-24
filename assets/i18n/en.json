@@ -650,8 +650,8 @@
   "my_account_page": {
     "My_Account": "My Account",
     "Profile": "Profile",
-    "Change_Password": "Change<br/>Password",
-    "Banking_Details": "Banking<br/>Details",
+    "Change_Password": "Change Password",
+    "Banking_Details": "Banking Details",
     "Username": "Username",
     "Enter_Username": "Enter Username",
     "Full_Name": "Full Name",
@@ -674,8 +674,8 @@
     "Account_Holder_Name": "Account Holder Name",
     "Saved_Bank": "Saved Bank",
     "Add_Bank": "Add Bank",
-    "": "",
-    "": "",
+    "Need_to_help": "Need to help? Please contact",
+    "Live_Chat": "Live Chat",
     "": "",
     "": ""
   },

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'My Account'})
+  <body>
+    <!-- Content -->
+    <section class="main my-account-page">
+      @@include('../components/base/navbar.html')
+
+      <div class="my-account-page__content container">
+        @@include('../components/base/layout.html', {
+          childContent: '../my-account-content.html',
+          menuActive: -1,
+          hideRightMenu: true,
+        })
+      </div>
+      
+      <!-- MODAL -->
+      @@include('../components/my-account/add-bank-detail-modal.html')
+      <!-- MODAL -->
+
+
+      <!-- @@include('../components/base/navbar-bottom.html', {active: -1}) -->
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

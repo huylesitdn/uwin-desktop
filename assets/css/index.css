@@ -4486,16 +4486,15 @@ a {
           .history-detail-page__content__container__item .card-body .table tbody tr:nth-child(4n) td {
             background: rgba(255, 255, 255, 0.06); }
 
-.my-account-page .navbar.fixed-top .title {
-  text-transform: capitalize; }
-
 .my-account-page__content {
   padding-top: 10px; }
   .my-account-page__content #myAccountNav {
     border-bottom: none;
     background: rgba(255, 255, 255, 0.13);
-    border-radius: 4px;
-    padding: 4px; }
+    border-radius: 8px;
+    padding: 4px;
+    gap: 4px;
+    min-height: 50px; }
     .my-account-page__content #myAccountNav .nav-item .nav-link {
       font-weight: 600;
       font-size: 12px;
@@ -4506,12 +4505,12 @@ a {
       padding-top: 3px;
       padding-bottom: 3px;
       height: 100%; }
-      .my-account-page__content #myAccountNav .nav-item .nav-link.active {
+      .my-account-page__content #myAccountNav .nav-item .nav-link:hover, .my-account-page__content #myAccountNav .nav-item .nav-link.active {
         background: #FDBB2C;
-        border-radius: 2px;
+        border-radius: 6px;
         color: #000000; }
   .my-account-page__content #myAccountContent {
-    padding: 20px 0; }
+    padding: 45px 0; }
     .my-account-page__content #myAccountContent .form__action .btn {
       width: 100%;
       font-weight: 700;
@@ -4532,7 +4531,7 @@ a {
       .my-account-page__content #myAccountContent .form__action .btn:focus {
         box-shadow: none; }
     .my-account-page__content #myAccountContent .form__container {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       position: relative; }
       .my-account-page__content #myAccountContent .form__container .error {
         font-weight: 400;
