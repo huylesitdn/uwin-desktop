@@ -101,8 +101,8 @@ var translator = new Translator({
   registerGlobally: "__",
   persist: true,
   persistKey: "preferred_language",
-  // filesLocation: "assets/i18n",
-  filesLocation: "https://raw.githubusercontent.com/huylesitdn/uwin-desktop/main/assets/i18n",
+  filesLocation: "assets/i18n",
+  // filesLocation: "https://raw.githubusercontent.com/huylesitdn/uwin-desktop/main/assets/i18n",
 });
 
 const queryString = window.location.search;
@@ -216,17 +216,10 @@ $('#myNavbar #collapseCountry .collapse__item').on('click', function() {
   }
 })
 
-// let playNowScrollLeft = 0
 $('.play-now').on('click', function() {
   const isLeft = $(this).hasClass('left');
-  // console.log('-=-=-=-', isLeft)
-  // playNowScrollLeft = isLeft ? (playNowScrollLeft + 100) : (playNowScrollLeft - 100)
-  // $('#brandlogoTab').scrollTo({
-  //   left: lisLeft,
-  //   behavior: 'smooth',
-  // });
   $('#brandlogoTab').animate({
-    scrollLeft: isLeft ? "-=200px" : "+=200px"
+    scrollLeft: isLeft ? "-=400px" : "+=400px"
   }, "slow");
 })
 

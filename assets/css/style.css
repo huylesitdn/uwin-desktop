@@ -52,6 +52,13 @@
           display: flex;
           gap: 12px;
           padding: 12px 16px; }
+          .navbar.fixed-top .content .avatar-dropdown .dropdown-menu .dropdown-item.country-name img.pull-right {
+            max-width: 9px;
+            transition: 0.15s ease; }
+          .navbar.fixed-top .content .avatar-dropdown .dropdown-menu .dropdown-item.country-name[aria-expanded="true"] .current-country {
+            display: none !important; }
+          .navbar.fixed-top .content .avatar-dropdown .dropdown-menu .dropdown-item.country-name[aria-expanded="true"] img.pull-right {
+            transform: rotate(180deg); }
           .navbar.fixed-top .content .avatar-dropdown .dropdown-menu .dropdown-item img {
             max-width: 24px; }
           .navbar.fixed-top .content .avatar-dropdown .dropdown-menu .dropdown-item:focus, .navbar.fixed-top .content .avatar-dropdown .dropdown-menu .dropdown-item:hover {

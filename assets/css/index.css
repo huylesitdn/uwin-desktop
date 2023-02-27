@@ -51,13 +51,15 @@ a {
 .toast#copiedToast {
   width: 100%;
   position: fixed;
-  top: 80px;
-  left: 0;
-  right: 0;
+  top: 100px;
+  left: -60px;
   display: flex;
   place-content: center;
   place-items: center;
-  background: transparent; }
+  background: transparent;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important; }
   .toast#copiedToast:not(.show) {
     display: none !important; }
   .toast#copiedToast .toast-body {
@@ -437,6 +439,40 @@ a {
     animation: pulseDemoBtn 1.5s infinite;
     -webkit-animation: pulseDemoBtn 1.5s infinite;
     box-shadow: 0 0 0 0 rgba(253, 187, 44, 0.5); }
+  .show-action .action {
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FDBB2C;
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 15px;
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: -1; }
+    .show-action .action .btn {
+      width: 100%;
+      height: 30px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      min-width: auto;
+      padding: 0; }
+  .show-action.active .action {
+    opacity: 1;
+    z-index: 1; }
 
 @keyframes pulsePlayRealBtn {
   0% { }
@@ -704,6 +740,9 @@ a {
 
 .w-inherit {
   width: inherit; }
+
+.mw-auto {
+  min-width: auto !important; }
 
 .container,
 .container-fluid,
@@ -1294,6 +1333,8 @@ a {
       text-align: center;
       color: #FFFFFF;
       padding: 12px; }
+    .home__content__special_odds__content__item .action {
+      border-radius: 12px !important; }
 
 .home__content__hot_games {
   padding-left: 0;
@@ -1343,40 +1384,6 @@ a {
         text-align: center;
         color: #FFFFFF;
         padding-bottom: 15px; }
-      .home__content__hot_games__content__item .action {
-        padding: 10px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.7);
-        border: 2px solid #FDBB2C;
-        backdrop-filter: blur(4px);
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        place-content: center;
-        place-items: center;
-        gap: 15px;
-        transition: all 0.2s;
-        opacity: 0;
-        z-index: -1; }
-        .home__content__hot_games__content__item .action .btn {
-          width: 100%;
-          height: 30px;
-          font-weight: 700;
-          font-size: 12px;
-          line-height: 16px;
-          text-align: center;
-          display: flex;
-          place-content: center;
-          place-items: center;
-          min-width: auto;
-          padding: 0; }
-      .home__content__hot_games__content__item.active .action {
-        opacity: 1;
-        z-index: 1; }
 
 .home__content__gaming_licenses {
   min-height: 145px;
@@ -2555,6 +2562,8 @@ a {
       text-align: center;
       color: #FFFFFF;
       padding: 12px; }
+    .category-page__content__container__special_odds__content__item .action {
+      border-radius: 12px !important; }
 
 .category-page__content__container__games_lobby__content {
   gap: 15px;
@@ -3060,7 +3069,10 @@ a {
     backdrop-filter: blur(8px);
     top: 55px;
     border: none;
-    z-index: 9; }
+    z-index: 9;
+    display: flex;
+    place-content: center;
+    place-items: center; }
     .play-now-page__content #brandlogoTab .play-now:hover {
       opacity: 0.7; }
     .play-now-page__content #brandlogoTab .play-now.left {

@@ -194,6 +194,8 @@
       text-align: center;
       color: #FFFFFF;
       padding: 12px; }
+    .category-page__content__container__special_odds__content__item .action {
+      border-radius: 12px !important; }
 
 .category-page__content__container__games_lobby__content {
   gap: 15px;

@@ -504,8 +504,9 @@
     "description1": "Your account has been succesfully registered,<br/>the following is your username & password.",
     "description2": "Only the last step of deposit, you can start the game.",
     "description3": "Depositing is quick and easy, we have a huge<br/>range of deposit options available, Good Luck!",
-    "Deposit_Now": "Deposit Now",
-    "Homepage": "Homepage",
+    "Deposit_Now": "DEPOSIT NOW",
+    "Redeem_Voucher": "Redeem Voucher",
+    "Homepage": "HOME PAGE",
     "help": "If you have any questions, please contact <a href=\"#\">LiveChat</a>.",
     "": ""
   },
@@ -631,7 +632,7 @@
     "USDT": "USDT",
     "Current_exchange_rate": "Current exchange rate: 1 USDT = SGD 4.22",
     "Cryptocurrency": "Cryptocurrency",
-    "Bank_Account_Humber": "Bank Account Humber",
+    "Bank_Account_Humber": "Address",
     "Add_Address": "Add Address",
     "": "",
     "": ""  

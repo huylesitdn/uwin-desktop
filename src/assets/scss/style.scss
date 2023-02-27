@@ -68,6 +68,23 @@
             gap: 12px;
             padding: 12px 16px;
 
+            &.country-name {
+              img.pull-right {
+                max-width: 9px;
+                transition: 0.15s ease;
+              }
+
+              &[aria-expanded="true"] {
+                .current-country {
+                  display: none !important;
+                }
+
+                img.pull-right {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+
             img {
               max-width: 24px;
             }
@@ -82,9 +99,11 @@
             }
           }
         }
-        #collapseCountry{
+
+        #collapseCountry {
           .dropdown-item {
             color: rgba(255, 255, 255, 0.45);
+
             &.active {
               color: #fff;
               background-color: transparent;
