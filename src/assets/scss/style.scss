@@ -75,6 +75,8 @@
               }
 
               &[aria-expanded="true"] {
+                background: rgba(255, 255, 255, 0.05);
+
                 .current-country {
                   display: none !important;
                 }
@@ -91,7 +93,7 @@
 
             &:focus,
             &:hover {
-              background-color: #19264B !important;
+              background-color: rgba(255, 255, 255, 0.05) !important;
             }
 
             &.divider {
@@ -101,6 +103,8 @@
         }
 
         #collapseCountry {
+          background-color: rgba(255, 255, 255, 0.05) !important;
+
           .dropdown-item {
             color: rgba(255, 255, 255, 0.45);
 
