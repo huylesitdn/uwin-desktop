@@ -15,9 +15,16 @@
     </div>
     <div class="d-flex justify-content-end align-items-center">
       <button type="button" class="btn btn-language">中</button>
+      @@if (!context.without_login) {
       <button type="button" class="btn btn-newbie p-0 me-3 pt-1" data-bs-toggle="modal" data-bs-target="#newbieModal">
         <img class="h-100" src="assets/images/newbie-icon.png" alt="" />
       </button>
+      }
+      @@if (!!context.without_login) {
+      <button type="button" class="btn btn-newbie p-0 me-3 pt-1" data-bs-toggle="modal" data-bs-target="#newbieWithoutLoginModal">
+        <img class="h-100" src="assets/images/newbie-icon.png" alt="" />
+      </button>
+      }
       @@if (!context.without_login) {
       <div
         class="btn-group"
@@ -128,7 +135,6 @@
 
 
 <!-- NEWBIE MODAL -->
-@@include('../newbie-modal.html', {
-  without_login: '@@without_login'
-})
+@@include('../newbie-modal.html')
+@@include('../newbie-without-login-modal.html')
 <!-- NEWBIE MODAL -->
