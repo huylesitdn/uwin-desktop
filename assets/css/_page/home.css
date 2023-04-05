@@ -483,7 +483,8 @@
     color: #FFFFFF;
     display: inline-block;
     min-width: 45px;
-    padding: 4px 10px; }
+    padding: 4px 10px;
+    word-break: keep-all; }
   .home-section .title {
     font-style: normal;
     font-weight: 600;
