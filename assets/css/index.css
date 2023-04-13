@@ -1675,7 +1675,8 @@ a {
       place-content: flex-start;
       place-items: center;
       gap: 12px;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      min-height: 60px; }
       .home__content__category__item__img img {
         height: 32px;
         width: 32px;
@@ -1686,8 +1687,8 @@ a {
     .home__content__category__item__text {
       font-weight: 400;
       font-size: 16px;
-      line-height: 24px;
-      text-align: center;
+      line-height: 20px;
+      text-align: left;
       color: #FFFFFF; }
 
 .home__content__feature__title {
