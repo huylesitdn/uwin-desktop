@@ -2831,7 +2831,8 @@ a {
       place-content: flex-start;
       place-items: center;
       gap: 12px;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      min-height: 60px; }
       .category-page__content__top__navbar__item__img img {
         height: 32px;
         width: 32px;
@@ -2844,8 +2845,8 @@ a {
     .category-page__content__top__navbar__item__text {
       font-weight: 400;
       font-size: 16px;
-      line-height: 24px;
-      text-align: center;
+      line-height: 20px;
+      text-align: left;
       color: #FFFFFF; }
     .category-page__content__top__navbar__item.active {
       pointer-events: none; }

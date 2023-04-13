@@ -522,6 +522,7 @@
             place-items: center;
             gap: 12px;
             transition: all 0.3s;
+            min-height: 60px;
 
             img {
               height: 32px;
@@ -548,8 +549,8 @@
           &__text {
             font-weight: 400;
             font-size: 16px;
-            line-height: 24px;
-            text-align: center;
+            line-height: 20px;
+            text-align: left;
             color: #FFFFFF;
           }
 
