@@ -2666,8 +2666,7 @@ a {
       border-radius: 12px !important; }
 
 .category-page__content__container__games_lobby__content {
-  gap: 15px;
-  padding-top: 30px; }
+  gap: 20px; }
   .category-page__content__container__games_lobby__content img {
     width: 100%; }
   .category-page__content__container__games_lobby__content__item {
@@ -2675,7 +2674,8 @@ a {
     padding-right: 0;
     margin-bottom: 20px;
     min-width: 135px;
-    width: 100%; }
+    width: 140px;
+    height: 170px; }
     .category-page__content__container__games_lobby__content__item__title {
       font-weight: 600;
       font-size: 14px;
