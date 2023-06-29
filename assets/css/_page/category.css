@@ -198,7 +198,8 @@
       border-radius: 12px !important; }
 
 .category-page__content__container__games_lobby__content {
-  gap: 20px; }
+  gap: 20px;
+  padding-top: 30px; }
   .category-page__content__container__games_lobby__content img {
     width: 100%; }
   .category-page__content__container__games_lobby__content__item {
@@ -270,6 +271,9 @@
           margin-top: 10px; }
     .category-page__content__container__games_lobby__content__item:nth-child(even) .category-page__content__container__games_lobby__content__item__img {
       background-image: url(../images/games-lobby-2.svg); }
+
+.category-page__content__container__games_lobby .casino_lobby {
+  padding-top: 0; }
 
 .category-page__content__container__hot_games__content {
   display: flex;

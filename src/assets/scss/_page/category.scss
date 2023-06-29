@@ -282,7 +282,7 @@
       &__games_lobby {
         &__content {
           gap: 20px;
-          // padding-top: 10px;
+          padding-top: 30px;
 
           img {
             width: 100%;
@@ -386,6 +386,10 @@
             }
 
           }
+        }
+
+        .casino_lobby {
+          padding-top: 0;
         }
       }
 
