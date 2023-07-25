@@ -1439,5 +1439,22 @@ function initialize () {
 
 }
 
+// collapse text
+$('.hide-button').click(function(){
+  const check = $('.textOther').hasClass('show');
+  console.log('check: ', check);
+  if(check) {
+    const text = translator.translateForKey('deposit_page.game_balance_other', _get_language)
+    $('.textOther').html(text);
+    $('.textOther').removeClass('show');
+    $(this).removeClass('rotate180');
+  } else {
+    const text = translator.translateForKey('deposit_page.game_balance_title1', _get_language)
+    $('.textOther').html(text);
+    // $('.textOther').show();
+    $('.textOther').addClass('show');
+    $(this).addClass('rotate180');
+  }
+});
 
 console.log("--- index.jsaaa");

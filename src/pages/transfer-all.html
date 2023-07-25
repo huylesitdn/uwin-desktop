@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Deposit'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main deposit-page">
+      @@include('../components/base/navbar.html')
+      <div class="deposit-page__content container">
+
+        @@include('../components/base/layout.html', {
+          childContent: '../transfer-all-content.html',
+          menuActive: 1,
+          hideRightMenu: true,
+        })
+        
+        
+      </div>
+
+      <!-- MODAL -->
+      @@include('../components/copied-toast.html')
+      @@include('../components/wallet/restore-modal.html')
+      <!-- MODAL -->
+
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

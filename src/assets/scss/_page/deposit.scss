@@ -1,4 +1,35 @@
 .deposit-page {
+  .all-transfer-content {
+    width: 350px;
+    background: #19264B;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 120px auto 50px;
+
+    .text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: #FFFFFF;
+      
+      span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #FDBB2C;
+      }
+    }
+
+    .action {
+      margin-top: 30px;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      gap: 10px;
+    }
+  }
   &__content {
     margin-bottom: 150px;
 
@@ -1291,6 +1322,10 @@
 
 
 #gameBalanceModal {
+  .close-button {
+    padding-bottom: 10px;
+  }
+
   .modal-content {
     .modal-header {
       padding: 20px 40px;
@@ -1313,6 +1348,22 @@
     overflow-y: auto;
     padding: 0 40px;
 
+    .other {
+      display: inline-flex;
+      align-items: start;
+
+      .hide-button {
+        width: 14px;
+        padding: 0;
+        margin-left: 8px;
+        margin-top: 2px;
+      }
+
+      .rotate180 {
+        transform: rotate(180deg);
+      }
+    }
+    
     &__item {
       display: flex;
       place-content: space-between;
