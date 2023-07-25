@@ -752,6 +752,13 @@ $(document).ready(function () {
 //   }
 // })
 
+
+$('.btn-redirect').on('click', function (e) {
+  e.preventDefault();
+  let url = $(this).attr('href');
+  window.location.href=url;
+})
+
 $('.category-page .btn-left').on('click', function (e) {
   e.preventDefault();
   $('.category-page .nav-tabs').animate({

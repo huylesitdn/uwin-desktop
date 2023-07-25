@@ -8,13 +8,22 @@
       @@include('../components/base/navbar.html')
       <div class="deposit-page__content container">
 
-        @@include('../components/base/layout.html', {
+        <!-- @@include('../components/base/layout.html', {
           childContent: '../transfer-all-content.html',
           menuActive: 1,
           hideRightMenu: true,
-        })
+        }) -->
         
-        
+        <div class="all-transfer-content">
+          <div class="text-center">
+            <div class="text mb-3" data-i18n="play_now_page.Dear_valued_customer"></div>
+            <div class="text" data-i18n="play_now_page.do_you_wish_to"></div>
+            <div class="action">
+              <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal" data-i18n="play_now_page.No_Thanks"></button>
+              <button type="button" class="btn btn-warning btn-confirm w-100" data-i18n="play_now_page.Transfer_All"></button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- MODAL -->
