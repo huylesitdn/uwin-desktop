@@ -3593,7 +3593,8 @@
   padding: 0 40px; }
   #gameBalanceModal .game-balance-content .other {
     display: inline-flex;
-    align-items: start; }
+    align-items: start;
+    min-width: 40%; }
     #gameBalanceModal .game-balance-content .other .hide-button {
       width: 14px;
       padding: 0;
