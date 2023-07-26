@@ -508,6 +508,15 @@
   #chooseWalletModal .choose-modal__items input:checked ~ .checkmark {
     opacity: 1; }
 
+.fullPage {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .mbsc-popup-content .mbsc-ios.mbsc-scroller {
   background-color: #fff !important; }
   .mbsc-popup-content .mbsc-ios.mbsc-scroller .mbsc-ios.mbsc-scroller-wheel-group-cont {
