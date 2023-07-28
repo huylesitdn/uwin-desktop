@@ -157,6 +157,9 @@
           width: 25px; }
       .navbar.fixed-top .content__logo {
         max-width: 190px; }
+      .navbar.fixed-top .content .view-user {
+        height: 38px;
+        width: 38px; }
   .navbar.fixed-bottom {
     background: #19264B;
     box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.6);
