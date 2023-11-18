@@ -4,8 +4,91 @@
   @@include('../home/slider.html')
   <!-- end slider -->
 
+  <div class="accordion accordion-flush nav nav-tabs category-page__content__top__navbar" id="category-tab">
+    <div class="accordion-item category-page__content__top__navbar__item">
+      <h2 class="accordion-header" id="nav-slot-heading">
+        <button class="accordion-button category-page__content__top__navbar__item__img @@if (context.active !== 1) {collapsed}" type="button" data-bs-toggle="collapse" data-bs-target="#nav-slot-collapse" aria-expanded="@@if (context.active === 1) {true}" aria-controls="nav-slot-collapse">
+          <div class="">
+            <img src="assets/images/category/slot-blue.png" alt="" />
+            <img class="active" src="assets/images/category/slot-blue-active.png" alt="" />
+            <div class="category-page__content__top__navbar__item__text" data-i18n="menu.Slot"></div>
+          </div>
+        </button>
+      </h2>
+      <div id="nav-slot-collapse" class="accordion-collapse collapse @@if (context.active === 1) {show}" aria-labelledby="nav-slot-heading" data-bs-parent="#category-tab">
+        <div class="accordion-body">
+          @@include('./content/slot.html')
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item category-page__content__top__navbar__item">
+      <h2 class="accordion-header" id="nav-casino-heading">
+        <button class="accordion-button category-page__content__top__navbar__item__img @@if (context.active !== 2) {collapsed}" type="button" data-bs-toggle="collapse" data-bs-target="#nav-casino-collapse" aria-expanded="@@if (context.active === 2) {true}" aria-controls="nav-casino-collapse">
+          <div class="">
+            <img src="assets/images/category/casino-blue.png" alt="" />
+            <img class="active" src="assets/images/category/casino-blue-active.png" alt="" />
+            <div class="category-page__content__top__navbar__item__text" data-i18n="menu.Casino"></div>
+          </div>
+        </button>
+      </h2>
+      <div id="nav-casino-collapse" class="accordion-collapse collapse @@if (context.active === 2) {show}" aria-labelledby="nav-casino-heading" data-bs-parent="#category-tab">
+        <div class="accordion-body">
+          @@include('./content/casino.html')
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item category-page__content__top__navbar__item">
+      <h2 class="accordion-header" id="nav-e-sport-heading">
+        <button class="accordion-button category-page__content__top__navbar__item__img @@if (context.active !== 3) {collapsed}" type="button" data-bs-toggle="collapse" data-bs-target="#nav-e-sport-collapse" aria-expanded="@@if (context.active === 3) {true}" aria-controls="nav-e-sport-collapse">
+          <div class=" py-0">
+            <img src="assets/images/category/sport-blue.png" alt="" />
+            <img class="active" src="assets/images/category/sport-blue-active.png" alt="" />
+            <div class="category-page__content__top__navbar__item__text" data-i18n="Sport_E_sport"></div>
+          </div>
+        </button>
+      </h2>
+      <div id="nav-e-sport-collapse" class="accordion-collapse collapse @@if (context.active === 3) {show}" aria-labelledby="nav-e-sport-heading" data-bs-parent="#category-tab">
+        <div class="accordion-body">
+          @@include('./content/e-sport.html')
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item category-page__content__top__navbar__item">
+      <h2 class="accordion-header" id="nav-arcade-heading">
+        <button class="accordion-button category-page__content__top__navbar__item__img @@if (context.active !== 4) {collapsed}" type="button" data-bs-toggle="collapse" data-bs-target="#nav-arcade-collapse" aria-expanded="@@if (context.active === 4) {true}" aria-controls="nav-arcade-collapse">
+          <div class="">
+            <img src="assets/images/category/arcade-blue.png" alt="" />
+            <img class="active" src="assets/images/category/arcade-blue-active.png" alt="" />
+            <div class="category-page__content__top__navbar__item__text" data-i18n="menu.Arcade"></div>
+          </div>
+        </button>
+      </h2>
+      <div id="nav-arcade-collapse" class="accordion-collapse collapse @@if (context.active === 4) {show}" aria-labelledby="nav-arcade-heading" data-bs-parent="#category-tab">
+        <div class="accordion-body">
+          @@include('./content/arcade.html')
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item category-page__content__top__navbar__item">
+      <h2 class="accordion-header" id="nav-4d-heading">
+        <button class="accordion-button category-page__content__top__navbar__item__img @@if (context.active !== 5) {collapsed}" type="button" data-bs-toggle="collapse" data-bs-target="#nav-4d-collapse" aria-expanded="@@if (context.active === 5) {true}" aria-controls="nav-4d-collapse">
+          <div class="">
+            <img src="assets/images/category/4d-blue.png" alt="" />
+            <img class="active" src="assets/images/category/4d-blue-active.png" alt="" />
+            <div class="category-page__content__top__navbar__item__text" data-i18n="menu.4D"></div>
+          </div>
+        </button>
+      </h2>
+      <div id="nav-4d-collapse" class="accordion-collapse collapse  @@if (context.active === 5) {show}" aria-labelledby="nav-4d-heading" data-bs-parent="#category-tab">
+        <div class="accordion-body">
+          @@include('./content/4d/index.html')
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- 
   <div class="nav nav-tabs category-page__content__top__navbar row mx-0" id="category-tab" role="tablist">
-    <a href="./slot.html" class="col category-page__content__top__navbar__item @@if (context.active === 1) {active}" id="nav-slot-tab" data-bs-toggle="tab" data-bs-target="#nav-slot" role="tab" aria-controls="nav-slot" aria-selected="true">
+    <a href="./slot.html" class="col category-page__content__top__navbar__item @@if (context.active === 1) {active}" id="nav-slot-collapse" data-bs-toggle="tab" data-bs-target="#nav-slot" role="tab" aria-controls="nav-slot" aria-selected="true">
       <div class="category-page__content__top__navbar__item__img">
         <img src="assets/images/category/slot-blue.png" alt="" />
         <img class="active" src="assets/images/category/slot-blue-active.png" alt="" />
@@ -39,44 +122,6 @@
         <img class="active" src="assets/images/category/4d-blue-active.png" alt="" />
         <div class="category-page__content__top__navbar__item__text" data-i18n="menu.4D"></div>
       </div>
-    </a>
-  </div>
-
-  <!-- <div class="category-page__content__top__navbar container-fluid">
-    <a href="./slot.html" class="category-page__content__top__navbar__item @@if (context.active === 1) {active}" data-aos="fade-in">
-      <div class="category-page__content__top__navbar__item__img">
-        <img src="assets/images/category/slot-blue.png" alt="" />
-        <img class="active" src="assets/images/category/slot-blue-active.png" alt="" />
-      </div>
-      <div class="category-page__content__top__navbar__item__text" data-i18n="menu.Slot"></div>
-    </a>
-    <a href="./casino.html" class="category-page__content__top__navbar__item @@if (context.active === 2) {active}" data-aos="fade-in">
-      <div class="category-page__content__top__navbar__item__img">
-        <img src="assets/images/category/casino-blue.png" alt="" />
-        <img class="active" src="assets/images/category/casino-blue-active.png" alt="" />
-      </div>
-      <div class="category-page__content__top__navbar__item__text" data-i18n="menu.Casino"></div>
-    </a>
-    <a href="./sport.html" class="category-page__content__top__navbar__item @@if (context.active === 3) {active}" data-aos="fade-in">
-      <div class="category-page__content__top__navbar__item__img">
-        <img src="assets/images/category/sport-blue.png" alt="" />
-        <img class="active" src="assets/images/category/sport-blue-active.png" alt="" />
-      </div>
-      <div class="category-page__content__top__navbar__item__text" data-i18n="menu.Sport_E_sport"></div>
-    </a>
-    <a href="./arcade.html" class="category-page__content__top__navbar__item @@if (context.active === 4) {active}" data-aos="fade-in">
-      <div class="category-page__content__top__navbar__item__img">
-        <img src="assets/images/category/arcade-blue.png" alt="" />
-        <img class="active" src="assets/images/category/arcade-blue-active.png" alt="" />
-      </div>
-      <div class="category-page__content__top__navbar__item__text" data-i18n="menu.Arcade"></div>
-    </a>
-    <a href="./4d.html" class="category-page__content__top__navbar__item @@if (context.active === 5) {active}" data-aos="fade-in">
-      <div class="category-page__content__top__navbar__item__img">
-        <img src="assets/images/category/4d-blue.png" alt="" />
-        <img class="active" src="assets/images/category/4d-blue-active.png" alt="" />
-      </div>
-      <div class="category-page__content__top__navbar__item__text" data-i18n="menu.4D"></div>
     </a>
   </div> -->
 
