@@ -101,8 +101,8 @@ var translator = new Translator({
   registerGlobally: "__",
   persist: true,
   persistKey: "preferred_language",
-  // filesLocation: "assets/i18n",
-  filesLocation: "https://raw.githubusercontent.com/huylesitdn/uwin-desktop/main/assets/i18n",
+  filesLocation: "assets/i18n",
+  // filesLocation: "https://raw.githubusercontent.com/huylesitdn/uwin-desktop/main/assets/i18n",
 });
 
 const queryString = window.location.search;
@@ -1465,3 +1465,10 @@ $('.hide-button').click(function(){
 });
 
 console.log("--- index.jsaaa");
+
+
+const firstTimeRevampModalElm = $("#firstTimeRevampModal");
+if (firstTimeRevampModalElm.length > 0) {
+  var firstTimeRevampModal = new bootstrap.Modal(firstTimeRevampModalElm, {});
+  firstTimeRevampModal.show()
+}
