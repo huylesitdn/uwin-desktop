@@ -2666,15 +2666,13 @@ a {
       border-radius: 12px !important; }
 
 .category-page__content__container__games_lobby__content {
-  gap: 20px;
+  gap: 15px;
   padding-top: 30px; }
   .category-page__content__container__games_lobby__content__item {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 20px;
-    min-width: 135px;
-    width: 140px;
-    height: 170px; }
+    min-width: 135px; }
     .category-page__content__container__games_lobby__content__item__title {
       font-weight: 600;
       font-size: 14px;
@@ -2737,9 +2735,6 @@ a {
           margin-top: 10px; }
     .category-page__content__container__games_lobby__content__item:nth-child(even) .category-page__content__container__games_lobby__content__item__img {
       background-image: url(../images/games-lobby-2.svg); }
-
-.category-page__content__container__games_lobby .casino_lobby {
-  padding-top: 0; }
 
 .category-page__content__container__hot_games__content {
   display: flex;
@@ -2825,18 +2820,12 @@ a {
   text-align: center;
   border-bottom: none;
   padding-bottom: 12px;
-  gap: 15px;
-  flex-direction: column; }
-  .category-page__content__top__navbar .accordion-body {
-    padding-left: 0;
-    padding-right: 0; }
+  gap: 15px; }
   .category-page__content__top__navbar__item {
-    padding: 0;
-    width: 100%;
-    background-color: transparent !important; }
+    padding: 0; }
     .category-page__content__top__navbar__item__img {
-      background: #131D39 !important;
-      border-radius: 10px !important;
+      background: #131D39;
+      border-radius: 10px;
       padding: 12px;
       border: 2px solid rgba(25, 66, 132, 0.3);
       display: flex;
@@ -2845,13 +2834,6 @@ a {
       gap: 12px;
       transition: all 0.3s;
       min-height: 60px; }
-      .category-page__content__top__navbar__item__img > div {
-        display: flex;
-        place-content: center;
-        place-items: center;
-        gap: 15px; }
-      .category-page__content__top__navbar__item__img::after {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important; }
       .category-page__content__top__navbar__item__img img {
         height: 32px;
         width: 32px;
@@ -2861,17 +2843,6 @@ a {
       .category-page__content__top__navbar__item__img:hover {
         background: rgba(252, 162, 13, 0.24);
         border-color: #FDBB2C; }
-      .category-page__content__top__navbar__item__img:not(.collapsed) {
-        background: rgba(253, 187, 44, 0.24) !important;
-        border-radius: 18px !important;
-        border: 2px solid #FDBB2C;
-        box-shadow: 0px 0px 6px #FDBB2C; }
-        .category-page__content__top__navbar__item__img:not(.collapsed) img {
-          display: none; }
-          .category-page__content__top__navbar__item__img:not(.collapsed) img.active {
-            display: initial; }
-        .category-page__content__top__navbar__item__img:not(.collapsed)::after {
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FDBB2C'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important; }
     .category-page__content__top__navbar__item__text {
       font-weight: 400;
       font-size: 16px;
