@@ -1472,3 +1472,12 @@ if (firstTimeRevampModalElm.length > 0) {
   var firstTimeRevampModal = new bootstrap.Modal(firstTimeRevampModalElm, {});
   firstTimeRevampModal.show()
 }
+
+
+$('#category-tab .category-page__content__top__navbar__item').on('click', function() {
+  const home_feature_elm = $('.home__content__feature');
+  // if(!home_feature_elm.hasClass('d-none')) {
+  //   home_feature_elm.slideDown("slow");
+  // }
+  home_feature_elm.fadeOut(200);
+})
